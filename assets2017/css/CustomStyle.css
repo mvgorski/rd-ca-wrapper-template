@@ -1,0 +1,262 @@
+/*******************************************************************/
+/*                 Fix for Case 00279403
+********************************************************************/
+
+.cstmBack, .cstmFrame, .controlArea  { background-color: transparent !important; }
+.controlArea { background-color: transparent !important; }
+.cstmBack  { background-color: transparent !important; }
+.cstmFrame  { background-color: transparent !important; }
+
+/*
+	These are the styles for this site.
+	Convio does not maintain this file.
+*/
+
+/* MG 12-16-16 updates */
+
+
+BODY.bodytag, BODY.bodytag P {
+	background-color: #000000;
+	color: #FFFFFF !important;
+}
+BODY.bodytag TD {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	color: #FFFFFF;
+}
+.leftNav {
+	background-color: #121212;
+}
+.teams {
+	background-color: #121212;
+	padding-left: 4px;
+	padding-right: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 10px;
+	color: #FFFFFF;/* 	text-indent: -5px; */
+}
+.teams a:visited, .teams a:active, .teams a:link {
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.teams a:hover {
+	font-size: 10px;
+	color: #ffcc33;
+	text-decoration: none;
+}
+a:link, a:visited, a:active {
+	/* color: #FFcc33; */
+	text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+	/*color: #122f8d;*/ 
+}
+
+a:hover {
+	/*color: #FFcc33;
+	text-decoration: underline;*/
+}
+.photoCaption {
+	font-size: 10px;
+	font-style: italic;
+}
+.paragraphTitle {
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.headline {
+	font-size: 24px;
+	color: #666666;
+	font-weight: bold;
+}
+/* for sf 155545
+	to change the calendar background */
+td.currentMonth {
+	background-color: #222;
+}
+td.otherMonth {
+	background-color: black;
+}
+table.Calendar p.paddedEntrySmall {
+	background-color: transparent;
+}
+table.Calendar {
+	border-top: 1px solid #444;
+	border-left: 1px solid #444;
+}
+table.Calendar th, table.Calendar td {
+	border-bottom: 1px solid #444;
+	border-right: 1px solid #444;
+}
+table.Calendar th.TableHeadings {
+	background-color: black;
+}
+p.lc_Text, .lc_Text {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+p.dividerHeading a:active, p.dividerHeading a:link, p.dividerHeading a:visited {
+	font-weight:bold;
+	text-decoration:none;
+	color:#ffcc33;
+}
+p.dividerHeading a:hover {
+	text-decoration:underline;
+	font-weight:bold;
+	color:#ffcc33;
+}
+/******************************************************************/
+/************************ FIX for DON2 ***************************/
+/******************************************************************/
+.CheckboxLabel, .FormMsgText, .FormElementHiddenWarnLabel, .FormElementHiddenRequired, .FormElementHiddenInfoLabel, .FormLabelText, .RadioGroupLabel {
+	color: #000000;
+}
+/******************************************************************/
+/********************** END FIX for DON2 ***********************/
+/******************************************************************/
+
+tr.FormRow, td.holdsErrorMsgTable, .fr_reg_summary_table, .FormBox {
+	background-color:#000000;
+}
+.FormLabelText, .RadioGroupLabel, td.FormLabelText, .FormMsgText, .CheckboxLabel, .SectionHead, #suggested_goal_container {
+	color: #333333; /*was #ffffff */
+}
+.cstmBtnBack2 {
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: #FFcc33;
+	border: 5px outset #ffcc33;
+	color: White;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: medium outset #ffcc33;
+}
+p.cstmBtnText2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+a.cstmBtnText2:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+a.cstmBtnText2:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+a.cstmBtnText2:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+table.tr_roster td.roster_row0, table.tr_roster td.roster_row1 {
+	background-color: #000000;
+	border-bottom: 1px solid #FFFFFF;
+}
+/*******************************************************************/
+/*                          Fix yellow on register form
+*******************************************************************/
+.dividerHeading a:link {
+	color: #2f4d99;
+}
+.dividerHeading a:visited {
+	color: #2f4d99;
+}
+.dividerHeading a:hover {
+	color: #2f4d99;
+}
+/*******************************************************************/
+/*                      Fix header on page 6 of registration
+********************************************************************/
+.appSubArea table td {
+	font-size: 18px;
+	font-weight: bold;
+}
+.appSubArea .FormBoxNoWidth table td {
+	font-size: 12px;
+	font-weight: normal;
+}
+.appSubArea table td .cstmTitle {
+	font-size: 12px;
+}
+/*******************************************************************/
+/*                      Fix for scrolling back 
+********************************************************************/
+p.scrollingText {
+	color: #ffffff;
+}
+.scrollingBack {
+	background-color: #000;
+}
+.scrollingArea {
+	background-color: #000;
+}
+/*******************************************************************/
+/*                      Fix for address book 
+********************************************************************/
+tr.lc_Row0 {
+	background-color: #cccccc;
+}
+tr.lc_Row1 {
+	background-color: #eeeeee; /* this was #999 4-14-11 */
+}
+/*******************************************************************/
+/*                      Fix for edit personal page 
+********************************************************************/
+.Hint {
+	color:#000000;
+}
+/*******************************************************************/
+/*                  Setting label at fixed font size 
+********************************************************************/
+label {
+/*font-size: 12px;*/
+}
+
+h2.cstmTitle {
+font-size: 120% !important;
+}
+
+.cstmBack { z-index: -100;  float: none; } 
+.cstmFrame { z-index: -100;  
+/*float: none !important; */
+display: inline !important; 
+                    margin: 10px, 30px, 10px, 10px; }
+
+/* SF 3010988 */
+p.cstmFrame,
+table.cstmFrame {
+	display: block !important;
+	text-align: center;
+}
+					
+/*******************************************************************/
+/*                  Fixing white scrolling list
+********************************************************************/
+
+p.scrollingText 
+{ 
+
+color: #000000; 
+
+} 
+
+/*PersonalBadgeCustomDisplay*/
+tabletd.cstmBtnBack{background-color:#fff;border:0;}
+#custom_tr_achievement_badge_icon_list_large_header{display:none;}
+#custom_tr_achievement_badges_empty_list{display:none;}

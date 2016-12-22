@@ -1,0 +1,367 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ride Canada Template</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--Jasny-->
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+<link rel="stylesheet" href="assets2017/css/style.css">
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<!-- wrapper header
+<convio:session name="51" param="ab17_header"></convio:session>
+end wrapper header -->   
+<header id="nav-wrapper">
+<!-- .site-overlay for when off-canvas menu is active -->
+<div class="site-overlay"></div>
+   <div id="nav-desktop" class="container hidden-xs">
+      <div class="row">
+         <div class="col-sm-3">
+            <a href="#">
+               <img src="http://placehold.it/215x80" alt="The Ride to Conquer Cancer" class="img-responsive">
+            </a>
+         </div>
+         <div class="col-sm-9">
+            <div id="nav-desktop-cta" class="row">
+               <div class="col-sm-12 col-lg-offset-1 col-lg-11 text-uppercase">
+                  <div class="col-sm-3"><a href="" class="btn btn-yellow-cta">Register</a></div>
+                  <div class="col-sm-3"><a href="" class="btn btn-yellow-cta">Donate</a></div>
+                  <div class="col-sm-3"><a href="" class="btn btn-yellow-cta">Get Info</a></div>
+                  <div class="col-sm-3"><a href="" class="btn btn-login-cta">Login <i class="fa fa-user" aria-hidden="true"></i></a></div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12">
+                  <nav id="nav-desktop-main-menu" class="navbar">
+                     <ul class="nav navbar-nav text-uppercase">
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                              <ul class="dropdown-menu">
+                                 <li><a href="#">About the Ride</a></li>
+                                 <li><a href="#">How We Support</a></li>
+                                 <li><a href="#">Ride as a Team</a></li>
+                                 <li><a href="#">Calendar</a></li>
+                                 <li><a href="#">Our Partners</a></li>
+                                 <li><a href="#">Photos</a></li>
+                              </ul>
+                       </li>
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Impact</a>
+                              <ul class="dropdown-menu">
+                                 <li><a href="#">Your Dollars at Work</a></li>
+                                 <li><a href="#">About Cancer Foundation</a></li>
+                                 <li><a href="#">About Cancer</a></li>
+                                 <li><a href="#">Stories</a></li>
+                                 <li><a href="#">Our Partners</a></li>
+                                 <li><a href="#">Photos</a></li>
+                              </ul>
+                         </li>
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fundraising</a>
+                              <ul class="dropdown-menu">
+                                 <li><a href="">Fundraise</a></li>
+                                 <li><a href="">Resources</a></li>
+                              </ul>
+                       </li>
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Training</a>
+                           <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">One more separated link</a></li>
+                            </ul>
+                          </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Participants</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">One more separated link</a></li>
+                            </ul>
+                          </li>
+                     </ul>                     
+                  </nav>                  
+               </div>
+            </div>
+
+
+            
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+   <div id="nav-mobile" class="container visible-xs-block">
+
+      <div id="nav-mobile-header" class="row">
+         <div class="col-xs-12">
+            <img src="http://placehold.it/120x50" alt="The Ride to Conquer Cancer" class="img-responsive pull-left logo">
+
+         
+         <button type="button" class="off-canvas-menu pull-right">
+            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+         </button>
+         <!-- 
+
+         ***Pushy Menu***
+         https://github.com/christophery/pushy
+
+         called by button.off-canvas-menu in html and js
+
+         -->
+         <nav id="nav-off-canvas" class="pushy pushy-left">
+            <ul class="list-unstyled">
+               <!-- Submenu -->
+               <li><a href="#" class="btn btn-off-canvas-cta">Register</a></li>
+               <li><a href="#" class="btn btn-off-canvas-cta">Donate</a></li>
+               <li><a href="#" class="btn btn-off-canvas-cta">Get Info</a></li>
+               <li class="pushy-submenu">
+                   <a href="#">About</i></a>
+                   <ul>
+                       <li class="pushy-link"><a href="#" class="">Item 1</a></li>
+                       <li class="pushy-link"><a href="#" class="">Item 2</a></li>
+                       <li class="pushy-link"></li>
+                   </ul>
+               </li>
+               <li class="pushy-submenu">
+                  <a href="#">Impact</a>
+                  <ul>
+                     <li class="pushy-link"><a href="">Item 1</a></li>
+                     <li class="pushy-link"><a href="">Item 2</a></li>
+                     <li class="pushy-link"><a href="">Item 3</a></li>
+                  </ul>
+               </li>
+               <li class="pushy-submenu">
+                  <a href="#">Fundraising</a>
+                  <ul>
+                     <li class="pushy-link"><a href="">Item abc</a></li>
+                     <li class="pushy-link"><a href="">Item abc</a></li>
+                     <li class="pushy-link"><a href="">Item abc</a></li>
+                  </ul>
+               </li>
+               <li class="pushy-submenu">
+                 <a href="#">Training</a>
+                 <ul>
+                   <li class="pushy-link"><a href="#">Link</a></li>
+                   <li class="pushy-link"><a href="#">Link</a></li>
+                   <li class="pushy-link"><a href="#">Link</a></li>
+                 </ul>
+               </li>
+               <li class="pushy-submenu">
+                 <a href="#">Participants</a>
+                 <ul>
+                   <li class="pushy-link"><a href="#">Link</a></li>
+                   <li class="pushy-link"><a href="#">Link</a></li>
+                   <li class="pushy-link"><a href="#">Link</a></li>
+                 </ul>
+               </li>
+           </ul>
+
+            <ul id="mobile-off-canvas-social" class="list-inline text-center">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+
+
+
+         </nav>
+            
+        
+         </div>
+      </div>
+
+
+
+      <div id="mobile-cta" class="row text-uppercase">
+         <div class="col-xs-4 text-center">
+            <a href="#">Register</a>
+         </div>
+         <div class="col-xs-4 text-center">
+            <a href="#">Donate</a>
+         </div>
+         <div class="col-xs-4 text-center">
+            <a href="#">Info</a>
+         </div>
+      </div>
+   </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- *************
+*************************
+******************
+************************* -->
+<!-- wrapper content
+<div id="page-wrapper-content" class="page-wrapper-content">        
+<convio:session name="63" param="2"></convio:session> 
+</div>
+end wrapper content -->
+
+
+<div class="container">
+   <div class="row">
+      <div class="col-xs-12">
+         <h1>Ride Canada Wrapper Template</h1>
+         <h2>It's a cycling journey and a fundraising crusade.</h2>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-xs-6">
+         <p>Because when you join The Ride to Conquer Cancer, you’re taking action, becoming part of a powerful tribe and creating hope for countless individuals touched by cancer.</p>
+      </div>
+      <div class="col-xs-6"><img src="https://placeimg.com/300/500/animals" class="img-responsive" alt=""></div>
+   </div>
+   <div class="row">
+      <div class="col-xs-12 col-sm-4">
+         <img src="https://placeimg.com/640/480/animals" class="img-responsive" alt="">
+      </div>
+      <div class="col-xs-12 col-sm-8">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- *************
+*************************
+******************
+************************* -->
+<footer id="footer-wrapper">
+<div class="container">
+   <div class="row">
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+         <img src="https://placeimg.com/250/100/nature" class="img-responsive center-block" alt="Event Logo">
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+         <ul>
+            <li>CALL 888-771-2453 [BIKE]</li>
+            <li>AUG 26-27, 2017</li>
+            <li>303-698 Seymour Street, Vancouver BC V6B 3K6</li>
+            <li>Office Hours: Mon-Fri 9 AM - 6.00 PM</li>
+         </ul>
+
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+         <img src="https://placeimg.com/400/125/nature" class="img-responsive center-block" alt="Beneficiary Logo">
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+         <img src="https://placeimg.com/400/125/nature" class="img-responsive center-block" alt="Beneficiary Logo">
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="col-sm-3">
+         
+      </div>
+      <div class="col-sm-3">
+         
+      </div>
+      <div class="col-sm-3">
+         
+      </div>
+      <div class="col-sm-3">
+         
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-xs-12 text-center">
+         <p>&copy; 2017 4545 N. Maplewood Drive, P.O. Box Tannerhill Rd</p>
+      </div>
+   </div>
+
+</div>
+</footer>
+
+
+
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!--Bootstrap-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+   <!--Push-->
+	<script src="assets2017/js/pushy.js"></script>
+
+  <script>
+    jQuery('#nav-off-canvas li.pushy-submenu').click(function() {
+
+        $(this).find('i.fa-chevron-down').toggleClass('rotate');
+
+    });
+  </script>
+
+
+
+   <!--script.js-->
+	<!-- <script src="js/script.js"></script> -->
+</body>
+</html>

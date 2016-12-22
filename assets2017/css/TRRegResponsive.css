@@ -1,0 +1,2675 @@
+/*  Less Framework 4
+    http://lessframework.com
+    by Joni Korpi
+    License: http://opensource.org/licenses/mit-license.php */
+
+/*      Default Layout: 992px. 
+        Gutters: 24px.
+        Outer margins: 48px.
+        Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+div.registration-page-container div.section-container {
+    margin: 10px 0px;
+    color: #555555;
+    /*-moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;*/
+    border: 1px solid #eaeaea;
+}
+
+div.registration-page-container div.section-header {
+	/*-moz-border-radius-topleft: 12px;
+    -webkit-border-top-left-radius: 12px;
+    border-top-left-radius: 12px;
+	-moz-border-radius-topright: 12px;
+    -webkit-border-top-right-radius: 12px;
+    border-top-right-radius: 12px;*/
+    background-color: #f8f8f8;
+    padding-top: 10px;  
+    padding-bottom: 7px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+div.registration-page-container div.section-sub-header {
+    background-color: #dad7d0;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #a4a19c;
+    font-weight: bold;
+    font-size: 1em;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+div.registration-page-container div.section-sub-header.empty {
+    padding: 7px 0 0 0;
+}
+
+div.registration-page-container div.section-body {
+    padding: 25px;
+    text-align:left;
+}
+
+/* sub-sections within the body */
+div.registration-page-container div.sub-section-container {
+  background-color: #dad7d0;
+  text-align:left;
+}
+
+/*
+  In IE7, the background color of the hidden sub-section-container bleeds through when the emergency contact and
+  other divs are floated (side effect of the work to make the separate containers layout contiguously)
+*/
+div.registration-page-container div#reg_options_cons_info_extension.sub-section-container {
+  *background-color: #ffffff;
+}
+
+div.registration-page-container div.sub-section-header {
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  padding-top: 10px;  
+  padding-bottom: 7px;
+  padding-left: 10px;
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+div.registration-page-container div.sub-section-body {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+
+div.registration-page-container div.section-footer {
+	-moz-border-radius-bottomleft: 12px;
+    -webkit-border-bottom-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+	-moz-border-radius-bottomright: 12px;
+    -webkit-border-bottom-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #f8f8f8;
+    padding: 5px 10px;
+    
+}
+
+/* unique layout of secondary registration page requires a clear before the buttons */
+div.registration-page-container.reg-another-page div.section-footer {
+  clear: both;
+}
+
+/* styles the container that shows the total registration fee */
+div.registration-page-container div.label-value-block-container {
+    border: 5px solid #DAD4D0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+div.registration-page-container span.option-label {
+    float: left;
+}
+
+div.registration-page-container span.option-amount,
+div.registration-page-container span.option-value {
+    float: right;
+}
+
+/* add more emphasis on the total amount */
+div.registration-page-container #reg_total_amt, #reg_total_label {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+div.campaign-banner-container {
+    margin: 5px 0;
+}
+
+/* *********************************************************** */
+/* ERROR message/indicator related CSS                         */ 
+/* *********************************************************** */
+span.team-password-required-icon {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-image: url('../../images/lock-red.png');
+    background-repeat: no-repeat;
+    zoom: 1;
+}
+
+div#contact_info_section_one div.form-error,
+div#personal_info_section_one div.form-error,
+div#user_name_pword_container div.form-error
+{
+    /*margin-right: 4px;*/
+}
+
+/* ******************** */
+/* Get Started Page CSS */
+/* ******************** */
+
+.login-info-field .field-hint {
+    font-size: .8em;
+    margin-top: 0px;
+    padding-top: 1px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.login-info-field label {
+    font-size: .8em;
+}
+
+.login-info-field input {
+    display: block;
+}
+
+.login-info-field input[type="checkbox"] {
+    display: inline;
+    margin-left: 0px;
+    padding-left: 1px;
+}
+
+.login-info-field {
+    margin-bottom: 15px;
+}
+
+#returning_user_login_inputs_container {
+    float: left;
+    width: 49%;
+}
+
+#new_user_registration_inputs_container {
+    float: left;
+    width: 49%;
+}
+
+/* ************************* */
+/* Team Page CSS - temporary */
+/* ************************* */
+
+.option-container {
+    background-color: #E6EFF6;
+    margin: 10px 0px;
+    padding: 15px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.option-container label {
+    color: #3695D6;
+}
+
+.option-container.selected {
+    border: 2px solid #F0A300;
+    background-color: #F8F8F8;
+}
+
+.option-container.selected label {
+    color: #000;
+}
+
+.option-container.selected .register-option-ctrl {
+    display: block;
+    padding-top: 15px;
+}
+
+.option-container .register-option-ctrl {
+    display: none;
+    margin: 0 0 15px 15px;
+}
+
+.option-container.selected .login-option-ctrl {
+    display: block;
+    padding-top: 15px;
+}
+
+.option-container .login-option-ctrl {
+    display: none;
+    margin: 0 0 15px 15px;
+}
+
+.login-info-field .field-hint {
+    font-size: .8em;
+    margin-top: 0px;
+    padding-top: 1px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.login-info-field label {
+    font-size: .8em;
+}
+
+.login-info-field input {
+    display: block;
+}
+
+.login-info-field input[type="checkbox"] {
+    display: inline;
+    margin-left: 0px;
+    padding-left: 1px;
+}
+
+.login-info-field {
+    margin-bottom: 15px;
+}
+
+#returning_user_login_inputs_container {
+    /*
+    float: left;
+    */
+    width: 49%;
+}
+
+#new_user_registration_inputs_container {
+    float: left;
+    width: 49%;
+}
+
+#register_create_ctrl label {
+    font-size: .8em;
+}
+
+#register_create_ctrl input,
+#register_create_ctrl select {
+    display: block;
+}
+
+#register_create_ctrl select {
+    width: 250px;
+}
+
+#register_create_ctrl #team_info_block1 {
+    float: left;
+    width: 40%;
+}
+
+#register_create_ctrl .team-info-field {
+    margin-bottom: 15px;
+}
+
+#register_create_ctrl #team-info-block2 {
+    float: right;
+    width: 40%;
+}
+
+#register_select_team_ctrl {
+    overflow: hidden;
+}
+
+#register_select_team_ctrl .team-container {
+    border: 1px solid #E5E3DE;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+    /* FF3.6+ */
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 50%, #F4F4F4 51%, #E0E0E0 100%);
+
+    /* IE10+ */
+    background: -ms-linear-gradient(top, #FFFFFF 0%,#F4F4F4 50%,#F4F4F4 51%,#E0E0E0 100%);
+
+
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#E0E0E0',GradientType=0 );
+    
+    /* W3C */
+    background: linear-gradient(top, #FFFFFF 0%,#F4F4F4 50%,#F4F4F4 51%,#E0E0E0 100%);
+
+    position: relative;
+}
+
+div.chteam-row {
+    float: left;
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+div.chteam-row.even {
+  background-color:#b0c4de;
+}
+
+div.chteam-row .chteam-team-capt-block,
+div.chteam-row .chteam-company-block {
+    float: left;
+    width: 49%;
+}
+
+.chteam-team-detail-link {
+    font-size: smaller;
+}
+
+div.chteam-team-submit-block {
+    float: left;
+    margin-left: 5%
+}
+
+div.chteam-detail-block .team-attr-info span {
+    display: block;
+}
+
+div.chteam-detail-block .team-attr-info {
+    font-size: .8em;
+}
+
+.chteam-team-name {
+    font-weight: bold;
+}
+
+/* ************************************************************ */
+/* Registration Payment Page - fr_cstm_payment_responsive.tpt   */
+/* ************************************************************ */
+
+/* sets the label and form input element on its own line */
+#reg_payment_page div.form-row div.form-content>select,
+#reg_payment_page div.form-row div.form-content>input {
+    margin-top: 3px;
+    display: block;
+}
+
+/* keep checkbox on the same line as its label */
+#reg_payment_page div.form-row.form-checkbox div.form-content>input {
+    display: inline;
+}
+
+/* prevent the error background to not expand the whole screen */ 
+#reg_payment_page div.form-row div.form-content {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+/* give components spacing between themselves */
+#reg_payment_page div.form-row {
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+/* ********************************** */
+/* CSS for the payment type selection */
+/* ********************************** */
+#reg_payment_page #reg_payment_info_block ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#reg_payment_page div.payment-type-selections a {
+    text-decoration: none;
+}
+
+#reg_payment_page div.payment-type-selections span {
+    display: inline-block;
+    vertical-align: bottom;
+    zoom: 1;
+}
+
+#reg_payment_page span.payment-type-option:hover {
+    cursor: pointer;
+}
+
+#reg_payment_page span.payment-type-option {
+    padding: 10px 20px;
+    border: 2px solid #e4e2dd;
+    color: #3596d4;
+    
+    background-color: #efefef;
+    background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#efefef 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#efefef 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 );
+    background: linear-gradient(top, #ffffff 0%,#efefef 100%);
+}
+
+#reg_payment_page span.payment-type-option.selected {
+    
+    background-color: #fdf2e0;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f2c357 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2c357));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f2c357 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#f2c357 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#f2c357 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2c357',GradientType=0 );
+    background: linear-gradient(top, #ffffff 0%,#f2c357 100%);
+}
+
+#reg_payment_page span.payment-type-option.selected a:link {
+    color: #000000;
+}
+
+#reg_payment_page span.internal-payment span.payment-type-option {
+    border: none;
+}
+
+#reg_payment_page span.internal-payment span.payment-type-option+span.payment-type-option {
+    margin-left: -1px;
+}
+
+#reg_payment_page span.internal-payment {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #e4e2dd;
+    display: inline-block;
+    zoom: 1;
+    background-color: #e4e2dd;
+    margin-right: 10px;
+}
+
+#reg_payment_page span.external-payment span.payment-type-option {
+    margin-right: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 6px 5px 0;
+}
+
+#reg_payment_page span.payment-type-option input {
+    display: none;
+}
+
+
+/* ***************************** */
+/* CSS for the CC fields section */
+/* ***************************** */
+#reg_payment_page li.tender-row {
+    display: inline;
+}
+
+#reg_payment_page #payment_typecc_exp_date_row,
+#reg_payment_page #payment_typecc_cvv_row {
+    display: inline-block;
+    vertical-align: bottom;
+    zoom: 1;
+    *display: inline;
+}
+
+#reg_payment_info_block #payment_typecc_number_row input {
+    width: 200px;
+}
+
+#reg_payment_info_block #payment_typecc_cvv_row input {
+    width: 80px;
+}
+
+#reg_payment_page #payment_typecc_type_row legend {
+    display: none;
+}
+
+/* *************************************** */
+/* CSS for the billing information section */
+/* *************************************** */
+#reg_payment_page #billing_addr_street1_row input,
+#reg_payment_page #billing_addr_street2_row input {
+    width: 400px;
+}
+
+#reg_payment_page #billing_info_name div.form-row,
+#reg_payment_page #billing_addr_city_row, 
+#reg_payment_page #billing_addr_state_row,
+#reg_payment_page #billing_addr_county_row,
+#reg_payment_page #billing_addr_zip_row {
+    display: inline-block;
+    vertical-align: bottom;
+    zoom: 1;
+    *display: inline;
+}
+
+/* ******** */
+/* Survey   */
+/* ******** */
+
+div#trreg_additional_questions span.survey-question-number {
+  text-indent: 15px;
+}
+
+div#trreg_additional_questions div.section-body>div.input-container>fieldset {
+  vertical-align:text-top;  
+    border: 2px groove threedface;
+    border-image: initial;
+}
+
+/*
+Multi-input questions have div instead of span due to fieldset/legend, so float is necessary to present it like the
+spanned single-input questions
+*/
+div#trreg_additional_questions div.survey-number-required-container {
+    float:left;
+}
+
+div#registration_options_page span.survey-textarea-container textarea {
+  margin-left: 4px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  vertical-align:text-top;
+  width: 680px;
+  max-width: 680px;
+  height: 50px;
+}
+
+div#registration_options_page span.survey-textarea-container.survey-large-text-container textarea
+{
+  height: 160px;
+}
+
+span.survey-text-hint {
+    font-size: .8em;
+    font-style: italic;
+    display: block;
+}
+
+span.survey-hidden {
+    display: none;
+}
+
+img.survey-captcha {
+  vertical-align:text-top;
+}
+
+/* floats to the right even when the text size is changed */
+div.required-indicator-legend {
+  /*text-align: right;*/
+  /*padding: 8px 24px 0px 8px;*/
+  padding: 10px;
+}
+
+/* Wrap the input elements */
+
+div.registration-page-container div.survey-question-container input[type="number"],
+div.registration-page-container div.survey-question-container textarea,
+div.registration-page-container div.survey-question-container input[type="text"]
+{
+  display: block;
+}
+
+div.registration-page-container div.survey-question-container span.survey_combo_other_input_container {
+  display: block;
+}
+
+div.registration-page-container div.survey-question-container span.survey_combo_other_input_container input[type="text"] {
+  display: inline;
+}
+
+
+
+/* ******************************************************************************** */
+/*  Participation Options Page: fr_cstm_pt_responsive.tpt                           */
+/* ******************************************************************************** */
+
+div.part-type-container.selected {
+    background-color: #f7f7f7;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f1ac09;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align:left;
+}
+
+div.part-type-container  input {
+    margin: 10px;
+    vertical-align: top;
+    text-align:left;
+}
+
+div#participation_options_page div.addon-component input
+{
+  margin-left: 10px;
+}
+
+div.part-type-container .part-type-image {
+    vertical-align: top;
+    margin: 5px;
+}
+
+div.part-type-container .part-type-decoration-messages {
+    display: inline-block;
+    max-width: 780px;
+    margin: 5px;
+    zoom: 1;
+    *display: inline;
+}
+
+div.part-type-decoration-messages span.part-type-name {
+    font-weight: bold;
+}
+
+div.part-type-decoration-messages .part-type-fee-text {
+    font-size: .875em;
+}
+
+div.part-type-decoration-messages .part-type-offline-fee-text {
+    font-size: .8em;
+    font-style: italic;
+}
+
+div.part-type-decoration-messages .part-type-description-text {
+    font-size: .875em;
+    display: block;
+    margin-top: 7px;
+}
+
+div.part-type-registrations-left {
+    margin-top: 7px;
+}
+
+div.part-type-registrations-left .part-type-registrations-left-text {
+    font-size: .875em;
+    font-style: italic;
+}
+
+div.part-type-registrations-left .part-type-registrations-left-number {
+    font-size: .875em;
+    font-weight: bold;
+}
+
+div.part-type-registrations-left .part-type-registrations-full-text {
+    font-size: .875em;
+    color: #970200;
+    font-style: italic;
+}
+
+div.part-type-decoration-messages .part-type-anonymous-required-text, div.part-type-decoration-messages .part-type-screenname-required-text {
+    font-size: .8em;
+    display: block;
+    font-style: italic;
+    margin-top: 7px;
+}
+
+
+div#part_type_fundraising_goal_container,
+div#part_type_offer_team_captain_container {
+    margin-top: 15px;
+}
+
+div#part_type_fundraising_goal_container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+div#part_type_fundraising_goal_container input {
+    margin-left: 10px;
+}
+
+div#part_type_fundraising_goal_container #suggested_goal_container {
+    margin-left: 10px;
+    font-size: .8em;
+    color: #767676;
+}
+
+div#part_type_additional_gift_container, div#part_type_addon_container, div#part_type_individual_company_selection_container {
+    margin-top: 20px;
+}
+
+div#part_type_additional_gift_input_container {
+    margin-top: 7px;
+}
+
+#fr_gift {
+    display: block;
+    margin-left: 10px;
+}
+
+#participation_options_page .input-container, div.donation-level-row-container {
+    margin-top: 5px;
+}
+
+/* more padding for the company selection elements */
+div#part_type_individual_company_selection_container div.combo-select-input-container,
+div#part_type_individual_company_selection_container div.combo-select-input-container {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+div.addon-container {
+    margin-top: 15px;
+}
+
+span.addon-description-text, a.addon-more-info-link {
+    display: block;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: .85em;
+}
+
+div.addon-component {
+    margin-top: 5px;
+}
+
+div.addon-component select {
+    margin-left: 25px;
+}
+
+#part_type_donation_level_input_container {
+    margin-bottom: 20px;
+}
+
+div.donation-level-row-container input[type="radio"] {
+    vertical-align: top;
+}
+div.donation-level-row-decoration-container {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+div.donation-level-row-container .donation-level-description-text {
+    display: block;
+    font-size: .85em;
+}
+
+
+/* ******************************************************************************** */
+/*  Returning Participant Login: fr_cstm_ut_responsive.tpt                          */
+/* ******************************************************************************** */
+
+#user_type_page .input-container {
+    margin-top: 5px;
+}
+
+div#user_type_new_participant_registration_container{
+    float: left;
+    width: 236px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 10px;
+}
+
+div#user_type_login_container {
+    float: left;
+    width: 234px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: #f7f7f7;
+    border-style: solid;
+    border-width: 1px;
+    border-left-color: #dad7d0;
+    border-right-color: #dad7d0;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    padding: 10px;
+}
+
+div#user_type_oauth_login_container {
+    width: 236px;
+    float: left;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 10px;
+}
+
+#fr_new_user_container {
+    margin-bottom: 10px;
+}
+
+div#user_type_new_participant_registration_container #next_step {
+    float: none;
+    margin-left: 15px;
+}
+
+#fr_new_user_container, #fr_returning_user_container, #fr_responsive_social_login_container {
+    display: block;
+    font-size: 1.25em;
+    color: #333333;
+}
+
+div#user_type_login_login_container #user_type_login_login_button, div#user_type_login_email_container #user_type_login_email_button {
+    float: none;
+    margin-top: 5px;
+}
+
+div#user_type_login_login_container, div#user_type_login_email_container {
+    margin-top: 10px;
+}
+
+div#user_type_email_login_info_link_container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div#user_type_login_container input {
+    display: block;
+    max-width: 220px;
+}
+
+div.social-provider-link-container a {
+    display: inline-block;
+    zoom: 1;
+    width: 100px;
+    height: 36px;
+    margin: 5px;
+    float: left;
+}
+
+div.social-provider-link-container a.aol {
+    background-image: url('../../images/login/responsive/aol-lrg.png');
+}
+
+div.social-provider-link-container a.facebook {
+    background-image: url('../../images/login/responsive/facebook-lrg.png');
+}
+
+div.social-provider-link-container a.google {
+    background-image: url('../../images/login/responsive/google-lrg.png');
+}
+
+div.social-provider-link-container a.linkedin {
+    background-image: url('../../images/login/responsive/linkedIn-lrg.png');
+}
+
+ 
+div.social-provider-link-container a.twitter {
+    background-image: url('../../images/login/responsive/twitter-lrg.png');
+}
+
+div.social-provider-link-container a.yahoo {
+    background-image: url('../../images/login/responsive/yahoo-lrg.png');
+}
+
+div.social-provider-link-container a.aol:active {
+    background-image: url('../../images/login/responsive/aol-lrg-down.png');
+}
+
+div.social-provider-link-container a.facebook:active {
+    background-image: url('../../images/login/responsive/facebook-lrg-down.png');
+}
+
+div.social-provider-link-container a.google:active {
+    background-image: url('../../images/login/responsive/google-lrg-down.png');
+}
+
+div.social-provider-link-container a.linkedin:active {
+    background-image: url('../../images/login/responsive/linkedIn-lrg-down.png');
+}
+ 
+div.social-provider-link-container a.twitter:active {
+    background-image: url('../../images/login/responsive/twitter-lrg-down.png');
+}
+
+div.social-provider-link-container a.yahoo:active {
+    background-image: url('../../images/login/responsive/yahoo-lrg-down.png');
+}
+
+/* ******************************************************************************** */
+/*  Reg Options Page: fr_cstm_reg_responsive.tpt                                    */
+/* ******************************************************************************** */
+
+div#registration_options_page div.section-body {
+  padding: 0px;
+}
+
+div#reg_instr_container {
+  font-size: 1em;
+  padding: 10px;
+}
+
+div#privacy_component_container {
+  padding-left: 10px;
+}
+
+div#privacy_component_container li,
+div#gift_notice_optin,
+div.form-content .input-container {
+  margin-bottom: 8px;
+} 
+
+/* indent field set under header */ 
+div#emergency_contact_field_group {
+  margin-left: 18px;
+}
+ 
+/* Survey radio and checkbox and input elements
+   to ensure label wraps to the right and not under the input   */
+div#registration_options_page li.input-container label {
+  display: inline-block;
+  zoom: 1;
+  max-width: 790px;
+}
+
+/* Also prevent wrapping around checkbox/radio, but for elements in the 2-col layout */
+div#privacy_component_container label,
+div#gift_notice_optin label,
+div#email_opt_in_container label,
+div#postal_mail_opt_in_container label,
+div#remember_me_container label {
+  display: inline-block;
+  zoom: 1;
+  max-width: 365px;
+}
+
+span#privacy_opts_screen_name {
+	margin-left: 24px;
+	display: inline-block;
+	zoom: 1;
+}
+
+div#password_component_container span.input-hint {
+  margin-left: 24px;
+  font-style: italic;
+  font-size: 8pt;  
+}
+
+select#matchingAddresses {
+  max-width: 235px;
+}
+
+div.returning-users-login-box a#lightbox-login-show {
+	color: #3596D4;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+/* ******************************************************************************** */
+/*  Contact Info Component: cons_info_component.themed.responsive.tpt               */
+/* ******************************************************************************** */
+
+div.reg-another-page div#reg_another_survey_container {
+  clear: both;
+}
+
+div#registration_options_page .indented-field-group {
+  margin-left: 8px;
+}
+
+div.registration-page-container .input-container .ungrouped
+{
+  display: block;
+}
+
+/* Hide the seam between two sub section containers to make it contiguous */
+div#cons_info_component_contact_info_section div.sub-section-body {
+  padding-bottom: 0px;
+}
+div#reg_options_cons_info_extension div.sub-section-body {
+  padding-top: 32px;
+}
+
+div#cons_info_component_container div#personal_info_section_one,
+div#cons_info_component_container div#personal_info_section_two,
+div#cons_info_component_container div#contact_info_section_one,
+div#cons_info_component_container div#contact_info_section_two,
+div#registration_options_page div#user_name_pword_container,
+div#registration_options_page div#privacy_opts_container,
+div#registration_options_page div#tribute_component_section_one,
+div#registration_options_page div#tribute_component_section_two,
+div#emergency_contact_container,
+div#gift_notice_optin,
+div#email_optin {
+  width: 412px;
+  float: left;
+  /*border: 1px dotted purple;*/
+}
+
+div#participant_info_container {
+  clear: both;
+  /*border: 1px dotted green;*/
+}
+
+/* Constrain the labels to keep both inputs on the same row */
+div#cons_info_suffix_container label span.input-label,
+div#cons_info_prof_suffix_container label span.input-label {
+  display: inline-block;
+  zoom: 1;
+  max-width: 110px;
+}
+
+div#participant_info_container
+div#tribute_component_section_container {
+  clear: both;
+}
+
+div#cons_info_suffix_container,
+div#cons_info_prof_suffix_container {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+div#cons_info_prof_suffix_container {
+  padding-left: 12px;
+}
+
+div#cons_info_dob span.input-container {
+  
+}
+span.cons_dob {
+    font-weight: 700;
+    color: #555;
+}
+div#email_optin label,
+div#gift_notice_optin label
+{
+  vertical-align: top;
+}
+div#email_optin label {
+    display: block;
+}
+
+div#registration_options_page div.field-group-header {
+	margin-bottom: 8px;
+}
+
+/* ******************************************************************************** */
+/*  Opt-In Component: cons_info_component.themed.responsive.tpt               */
+/* ******************************************************************************** */
+div#email_opt_in_container+div#email_format_container {
+  /*padding-left: 2em;*/
+} 
+
+div#employment_information_container div#occupation_container,
+div#employment_information_container div#employer_container {
+	margin-left: 16px;
+}
+
+/* ********************************************************** */
+/* Progress Bar: custom_progressbar_user_responsive_data.tpt  */
+/* ********************************************************** */
+  
+div.progress-bar-step-container {
+  padding-right: 18px;
+  margin-bottom: 5px;
+} 
+  
+div.progress-bar-step-container,
+div.progress-bar-step-number-container,
+div.progress-bar-step-text-container 
+{
+  display: inline-block;
+  font-weight: bold;
+  zoom: 1;
+  *display: inline;
+}
+
+div.progress-bar-step-text-container {
+    max-width: 80px;
+    vertical-align: text-top;
+    font-size: 12px;
+    margin-top: -9px;
+    padding-left: 5px;
+}
+
+div.progress-bar-step-container a {
+  text-decoration: none;
+}
+
+div.progress-bar-step-number-container {
+  width:30px;
+  height:30px;
+  border-radius:15px;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  font-size:16px;
+  color: #f0efeb;
+  line-height:30px;
+  text-decoration:none;
+  text-align:center;
+  background:#cfccc5;
+}
+
+div.registration-page-container div.progress-bar-step-number-container a {
+  color: #f0efeb;
+}
+
+div.progress-bar-step-text-container {
+  color: #cfccc5;
+}
+
+div.progress-bar-step-text-container a {
+  color: #3596D4;
+}
+
+div.progress-bar-step-current div.progress-bar-step-text-container,
+div.progress-bar-step-current  div.progress-bar-step-text-container a 
+{
+  color:#716e69;
+}
+
+/*
+ TODO: make selectable links darker, similar to color #999692
+*/
+
+
+div.progress-bar-step-current div.progress-bar-step-number-container {
+  background: #dea70f;
+}
+
+/* ********************************************************** */
+/* Waiver Page: fr_cstm_wvr_responsive.tpt                    */
+/* ********************************************************** */
+
+/* shows the printable version link on its own line to the right */
+div#fr_waiver_page div.printable-link-block {
+    text-align: right;
+}
+
+div#fr_waiver_page img.printable-link-icon {
+    vertical-align: text-bottom;
+}
+
+/* styling for the main waiver text area */
+div#fr_waiver_page div.waiver-text {
+    margin: 5px;
+    
+    /* force long words to wrap */
+    word-wrap: break-word;
+    
+    /* Gradient Border */
+    border: 3px solid #dad7d0;
+    -moz-border-bottom-colors: #dad7d0 #fff #fff;
+    -moz-border-top-colors: #dad7d0 #efede7 #f6f4f0;
+    -moz-border-left-colors: #dad7d0 #efede7 #f6f4f0;
+    -moz-border-right-colors: #dad7d0 #fff #fff;
+    padding: 15px 5px 5px 15px;
+}
+
+/* ************************************************************* */
+/* Registration Thanks Page: fr_reg_summary_responsive_view.tpt  */
+/* ************************************************************* */
+div#fr_thanks_page div.reg-summary-participant-info-container {
+    margin-left: 10px;
+    text-align:left;
+}
+
+div#fr_thanks_page div#transaction_summary_container {
+    border: 5px solid #DAD4D0;
+    padding: 10px 20px;
+    margin-left: 10px;
+    
+    
+}
+
+div#fr_thanks_page span#total_amt_label,
+div#fr_thanks_page span#total_amt {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+div#fr_thanks_page div.row-container {
+    padding: 5px 0;
+}
+
+div#fr_thanks_page a#part_ctr_container {
+    float: none;
+    margin: 10px;
+}
+
+div#fr_thanks_page span#email_sent_msg {
+    display: block;
+}
+
+div#fr_thanks_page span#email_sent_msg_email {
+    font-weight: bold;
+}
+
+div#fr_thanks_page div.confirm-email-msg {
+    margin-bottom: 25px;
+}
+
+/* ************************************************************* */
+/* Registration Summary Page + Registration Thanks Page          */
+/* ************************************************************* */
+div.reg-summary-thanks-common-container div.reg-summary-reg-info {
+    margin-bottom: 25px;
+}
+
+div.reg-summary-thanks-common-container div.reg-summary-address-info {
+    border: 2px solid #dbd8d3;
+    padding: 10px;
+    width: 250px;
+    display: table-cell;
+    zoom: 1;
+    *float: left;
+}
+
+div.reg-summary-thanks-common-container div.reg-summary-event-info {
+    border: 2px solid #dbd8d3;
+    border-left-width: 0px;
+    width: 565px;
+    display: table-cell;
+    zoom: 1;
+    *float: left;
+}
+
+div.reg-summary-thanks-common-container div.part-type-name {
+    font-weight: bold;
+}
+
+div.reg-summary-thanks-common-container div.reg-summary-total {
+    background-color: #dbd8d3;
+    text-align: right;
+    margin-right: 3px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}   
+
+div.reg-summary-thanks-common-container div.reg-summary-total > div {
+    padding: 10px;
+}
+
+div.reg-summary-thanks-common-container div.reg-summary-name-info {
+    background-color: #dbd8d3;
+    border: 2px solid #dbd8d3;
+    padding: 10px;
+    width: 250px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+
+div.reg-summary-thanks-common-container div.reg-summary-name-info span.contact-info-name {
+    color: #848383;
+}
+
+div.reg-summary-thanks-common-container div.reg-summary-name-info span.contact-info-first {
+    font-size: larger;
+    display: block;
+    font-weight: bold;
+    color: #000000;
+}
+
+div.reg-summary-thanks-common-container div.contact-info-email {
+    word-wrap: break-word;
+}
+
+div.reg-summary-thanks-common-container span.discount-amount {
+    color: red;
+}
+
+div.reg-summary-thanks-common-container div.reg-summary-address-info > div {
+    padding-bottom: 10px;
+}
+
+div.reg-summary-thanks-common-container span.uk-address {
+    display: block;
+}
+
+div.reg-summary-thanks-common-container div.reg-summary-event-info > div {
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+div.reg-summary-thanks-common-container div.reg-summary-event-info > div:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+div.reg-summary-thanks-common-container .detail-toggle-link {
+    display: none;
+}
+
+div.reg-summary-thanks-common-container .detail-toggle-link img {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+div.reg-summary-thanks-common-container div.action-button-container .secondary-wrapper,
+div.reg-summary-thanks-common-container div.action-button-container {
+    float: right;
+}
+
+div.reg-summary-thanks-common-container div.action-button-container {
+    width: 450px;
+}
+
+
+/* ************************************************************* */
+/* Find or Join Team: fr_cstm_tm_responsive.tpt                  */
+/* ************************************************************* */
+
+#team_find_page label {
+	font-size: .8em;
+}
+
+#team_find_page span#team_find_search_results_header_text {
+	display: block;
+	font-size: 1.25em;
+	margin-bottom: 10px;
+}
+
+#team_find_page div.list-component-paginator {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#team_find_page span.list-component-paginator-link-separator {
+	display: inline-block;
+	zoom: 1;
+	margin: 10px;	
+}
+
+#team_find_page div.list-component-paginator-records-text,
+#team_find_page div.list-component-paginator-link-container {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+#team_find_page div.list-component-paginator-records-text {
+	margin-right: 10px;
+}
+
+#team_find_page div.list-component-sort-select-container {
+	margin-bottom: 10px;
+}
+
+div#team_find_new_team_attributes input[type="text"], div#team_find_new_team_attributes input[type="password"], div#team_find_new_team_company #fr_division_name {
+	margin-top: 5px;
+	display: block;
+}
+
+#team_find_existing {
+	text-align: justify;	
+}
+
+#team_find_existing_team_search_container,
+#team_find_existing_company_selection_container,
+#team_find_search_button_container {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+div.parent-justify-filler {
+	width: 100%;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	height: 0px;
+}
+
+#fr_find_search {
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+}
+
+#team_find_registration_type_container {
+	text-align: right;	
+	/*font-size: .8em;*/
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+#team_find_page div.input-container {
+	margin-top: 20px;
+}
+
+#team_find_page span.hint-text {
+	/*font-size: .8em;*/
+	color: #767676;
+}
+
+#team_find_page .input-label {
+	margin-left: 4px;
+}
+
+span.team-find-alternate-options-seperator {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#team_find_registration_type_container div {
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+}
+
+#team_find_new_team_attributes, #team_find_new_team_company {
+	float: left;
+	width: 421px;
+}
+
+#fr_co_list_sel {
+  max-width: 380px;
+}
+
+#team_find_page div.combo-select-input-container {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#team_find_page #fr_division_name {
+	margin-left: 4px;
+}
+
+
+/* ************************************************************* */
+/* team search results                                           */
+/* ************************************************************* */
+
+#team_find_page div#team_find_search_results_container {
+	background-color: #f8f8f8;
+	border: 1px solid #dad7d0;
+	padding: 15px;
+	margin-top: 15px;
+}
+
+#team_find_page div.list-component-row {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dfdfdf');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfdfdf')";
+    background-image: -ms-linear-gradient(top, #ffffff, #dfdfdf);
+    background-image: -webkit-linear-gradient(top, #ffffff, #dfdfdf);
+    background-image: -moz-linear-gradient(top, #ffffff, #dfdfdf);
+    background-image: -o-linear-gradient(top, #ffffff, #dfdfdf);
+    background-image: linear-gradient(top, #ffffff, #dfdfdf);*/
+	border: 1px solid #dad7d0;
+	margin-bottom: 1px;
+	padding: 10px;
+}
+
+
+
+div#team_find_search_results_container div.list-component-cell {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+
+div#team_find_search_results_container div.list-component-cell.list-component-cell-column-team-name {
+	margin-bottom: 10px;
+	display: block;
+}
+
+div#team_find_search_results_container div.list-component-cell span.list-component-cell-title-text {
+	display: block;
+	font-style: italic;
+}
+
+div#team_find_search_results_container div.list-component-cell-column-team-name span.list-component-cell-title-text,
+div#team_find_search_results_container div.list-component-cell-column-team-password span.list-component-cell-title-text,
+div#team_find_search_results_container div.list-component-cell-column-team-password span.list-component-cell-data-text.empty-cell,
+div#team_find_search_results_container div.list-component-cell-column-division-name {
+	display: none;	
+}
+
+div#team_find_search_results_container div.list-component-cell-column-team-name span.list-component-cell-data-text {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+div#team_find_search_results_container div.list-component-cell-column-join-link a {
+    display: inline-block;
+    zoom: 1;
+    text-decoration: none;
+    background-color: #E3E3E3;
+    cursor: pointer;
+    padding: 5px 7px;
+    min-width: 132px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #a7d08e;
+    background-color: #d2e5c5;
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2e5c5', endColorstr='#b8d39c');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2e5c5', endColorstr='#b8d39c')";
+    background-image: -ms-linear-gradient(top, #d2e5c5, #b8d39c);
+    background-image: -webkit-linear-gradient(top, #d2e5c5, #b8d39c);
+    background-image: -moz-linear-gradient(top, #d2e5c5, #b8d39c);
+    background-image: -o-linear-gradient(top, #d2e5c5, #b8d39c);
+    background-image: linear-gradient(top, #d2e5c5, #b8d39c);*/
+    color: #2f6601;
+    text-align: center;
+}
+
+div#team_find_search_results_container div.list-component-cell.list-component-cell-column-captain-name,
+div#team_find_search_results_container div.list-component-cell.list-component-cell-column-company-name {
+	margin-right: 5px;
+	width: 300px;
+	float: left;
+}
+
+div#team_find_search_results_container div.list-component-cell.list-component-cell-column-team-password {
+	width: 12px;
+	float: left;
+}
+
+div#team_find_search_results_container div.list-component-cell.list-component-cell-column-join-link {
+	float: right;	
+}
+
+/* ************************************************************* */
+/* Team Reform Prompt: fr_team_reform_prompt.tpt                 */
+/* These provide specific overides for rendering in the          */
+/* responsive design template.                                   */
+/* ************************************************************* */
+div.registration-page-container div.team-reform-prompt {
+    border: 5px solid #cccccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+div.registration-page-container div.team-reform-prompt-text {
+    font-size: medium;
+    display: inline-block;
+}
+div.registration-page-container div.team-reform-prompt-question-text {
+    padding: 5px 0px;
+}
+div.registration-page-container div.team-reform-prompt-team-text {
+    padding: 5px 0px;
+    font-weight: bold;
+}
+div.registration-page-container div.team-reform-prompt-buttons {
+    display: inline-block;
+    float: right;
+    top: 0em;
+    height: 3em;
+}
+div.registration-page-container button.team-reform-prompt-button {
+    height: 2.5em;
+}
+
+
+/* ************************************************************* */
+/* Team Password Page: fr_cstm_tm_pwd_responsive.tpt             */
+/* ************************************************************* */
+
+#team_password_page label {
+	margin-left: 4px;
+}
+#team_password_page div.input-container {
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#team_password_page input[type="password"] {
+	margin-top: 5px;
+	display: block;
+}
+
+/* ************************************************************* */
+/* Donations 2 session timeout page                                        */
+/* ************************************************************* */
+
+#don_timeout_primary_message {
+    font-size: 9em;
+}
+
+#don_timeout_secondary_message {
+    font-size: 3em;
+}
+
+#don_timeout_detailed_message {
+    margin-top: 1em;
+}
+
+#don_timeout_retry_link{
+    margin-top: 1em;
+}
+
+/* ********************************************************** */
+/* Media Query Overrides                                      */
+/* ********************************************************** */
+
+/*      Tablet Layout: 768px.
+        Gutters: 24px.
+        Outer margins: 28px.
+        Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .mobile div.registration-page-container div.section-body {
+    	padding: 15px;
+    }
+    
+    .mobile div.progress-bar-step-text-container {
+        max-width: 60px;
+    }
+    
+    /* ******************************************************************************** */
+    /*  Participation Options Page: fr_cstm_pt_responsive.tpt (Tablet)                  */
+    /* ******************************************************************************** */
+    .mobile div.part-type-container .part-type-decoration-messages {
+        max-width: 610px;
+    }
+
+    /* ******************************************************************************** */
+    /*  Reg Options Page: fr_cstm_reg_responsive.tpt                                    */
+    /* ******************************************************************************** */
+
+    /* Survey radio and checkbox and input elements
+       to ensure label wraps to the right and not under the input   */
+    .mobile div#registration_options_page li.input-container label {
+        display: inline-block;
+        max-width: 610px;
+    }
+
+    /* Also prevent wrapping around checkbox/radio, but for elements in the 2-col layout */
+    .mobile div#privacy_component_container label,
+    .mobile div#gift_notice_optin label,
+    .mobile div#email_opt_in_container label,
+    .mobile div#postal_mail_opt_in_container label,
+    .mobile div#remember_me_container label {
+        display: inline-block;
+        max-width: 255px;
+    }
+        
+    .mobile div#cons_info_component_container div#personal_info_section_one,
+    .mobile div#cons_info_component_container div#personal_info_section_two,
+    .mobile div#cons_info_component_container div#contact_info_section_one,
+    .mobile div#cons_info_component_container div#contact_info_section_two,
+    .mobile div#registration_options_page div#user_name_pword_container,
+    .mobile div#registration_options_page div#privacy_opts_container,
+    .mobile div#registration_options_page div#tribute_component_section_one,
+    .mobile div#registration_options_page div#tribute_component_section_two,
+    .mobile div#emergency_contact_container,
+    .mobile div#gift_notice_optin,
+    .mobile div#email_optin {
+      width: 300px;
+      float: left;
+      /*border: 1px dotted purple;*/
+    }
+    
+    .mobile select#cons_country,
+    .mobile select#TRIB_COUNTRY,
+    .mobile select#cons_occupation,
+    .mobile select#matchingAddresses {
+      max-width: 270px;
+    }
+
+    
+    .mobile #participation_options_page .input-container, div.donation-level-row-container {
+        margin-top: 10px;
+    }
+    
+
+    /* ******************************************************************************** */
+    /*  Returning Participant Login: fr_cstm_ut_responsive.tpt (tablet)                 */
+    /* ******************************************************************************** */
+    
+    .mobile div#user_type_new_participant_registration_container{
+        float: left;
+        width: 318px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+        padding: 10px;
+    }
+    
+    .mobile div#user_type_login_container {
+        float: right;
+        width: 316px;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: #f7f7f7;
+        border-style: solid;
+        border-width: 1px;
+        border-left-color: #dad7d0;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        padding: 10px;
+    }
+    
+    .mobile div#user_type_oauth_login_container {
+        width: 318px;
+        float: left;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 10px;
+    }
+    
+    /* ************************************************************* */
+    /* Find or Join Team: fr_cstm_tm_responsive.tpt                  */
+    /* ************************************************************* */
+
+    .mobile #team_find_new_team_attributes,
+    .mobile #team_find_new_team_company {
+        width: 340px;
+    }
+
+    .mobile select#fr_co_list_sel,
+    .mobile select#fr_co_list {
+        max-width: 310px;
+    }
+
+    .mobile div#team_find_search_results_container div.list-component-cell.list-component-cell-column-captain-name,
+    .mobile div#team_find_search_results_container div.list-component-cell.list-component-cell-column-company-name {
+        width: 220px;
+    }
+    
+    /* ************************************************************* */
+    /* Registration Summary Page + Registration Thanks Page (Tablet) */
+    /* ************************************************************* */
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-name-info {
+        width: 230px;
+    }
+    
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-address-info {
+        width: 230px;
+    }
+    
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-event-info {
+        width: 428px;
+    }
+    
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-total {
+        margin-right: 0;
+    }
+    
+    /* ******************************************************************************** */
+    /*  Survey                                                                          */
+    /* ******************************************************************************** */
+  
+    .mobile div#registration_options_page span.survey-textarea-container textarea {
+        width: 588px;
+        max-width: 588px;
+        height: 50px;
+    }
+  
+    .mobile div#registration_options_page span.survey-textarea-container.survey-large-text-container textarea
+    {
+        height: 120px;
+    }
+}
+
+
+
+/*      Mobile Layout: 320px.
+        Gutters: 24px.
+        Outer margins: 34px.
+        Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+    .mobile div.registration-page-container div.section-body {
+        padding: 10px 2px;
+    }
+    
+    .mobile div.progress-bar-step-text-container {
+        display: none;
+    }
+    
+    .mobile div.registration-page-container div.section-footer {
+        text-align: center;
+    }
+    
+    /* ******************************************************************************** */
+    /*  Reg Options Page: fr_cstm_reg_responsive.tpt                                    */
+    /* ******************************************************************************** */
+    
+    /* Survey radio and checkbox and input elements
+       to ensure label wraps to the right and not under the input   */
+    .mobile div#registration_options_page li.input-container label {
+        display: inline-block;
+        max-width: 155px;
+    }
+
+    /* Constrain the labels to keep both inputs on the same row */
+    .mobile div#cons_info_suffix_container label span.input-label,
+    .mobile div#cons_info_prof_suffix_container label span.input-label {
+        display: inline-block;
+        max-width: 60px;
+    }
+        
+    /* Also prevent wrapping around checkbox/radio, but for elements in the 2-col layout */
+    .mobile div#privacy_component_container label,
+    .mobile div#gift_notice_optin label,
+    .mobile div#email_opt_in_container label,
+    .mobile div#postal_mail_opt_in_container label,
+    .mobile div#remember_me_container label {
+        display: inline-block;
+        max-width: 100%;
+    }
+    
+    .mobile div#cons_info_component_container div#personal_info_section_one,
+    .mobile div#cons_info_component_container div#personal_info_section_two,
+    .mobile div#cons_info_component_container div#contact_info_section_one,
+    .mobile div#cons_info_component_container div#contact_info_section_two,
+    .mobile div#registration_options_page div#user_name_pword_container,
+    .mobile div#registration_options_page div#privacy_opts_container,
+    .mobile div#registration_options_page div#tribute_component_section_one,
+    .mobile div#registration_options_page div#tribute_component_section_two,
+    .mobile div#emergency_contact_container,
+    .mobile div#gift_notice_optin,
+    .mobile div#email_optin {
+        width: auto;
+        float: none;
+    }
+    
+    .mobile div#reg_options_cons_info_extension div.sub-section-body {
+        padding-top: 0px;
+    }
+    
+    /* in smaller versions, place the "other" box under the select box */
+    .mobile div.survey-question-container span.survey_combo_other_input_container {
+      display: block;
+    }
+    .mobile div.survey-question-container span.survey_combo_other_input_container input[type="text"] {
+      max-width: 135px;
+    }
+    
+    .mobile select#cons_country,
+    .mobile select#TRIB_COUNTRY,
+    .mobile select#cons_occupation,
+    .mobile select#matchingAddresses {
+      max-width: 200px;
+    }
+    
+    .mobile div.registration-page-container select
+    {
+      max-width: 219px;
+    }
+    
+    .mobile select#cons_occupation {
+      max-width: 185px;
+    }
+    
+    .mobile select#cons_email_format {
+      max-width: 70px;
+    }
+    
+    .mobile div#email_format_container label {
+      max-width: 86px;
+      display: inline-block;
+    }
+    
+    /* no longer need right padding when in mobile (single-column) layouts */
+    .mobile div.registration-page-container div.form-content {
+        margin-right: 0px;
+    }
+    
+    .mobile div#fr_part_co_list select {
+    	margin-left: 20px;
+    }
+
+    /* ******************************************************************************** */
+    /*  Returning Participant Login: fr_cstm_ut_responsive.tpt (mobile - narrow)        */
+    /* ******************************************************************************** */
+
+    .mobile span.addon-description-text {
+        display: none;
+    }
+    
+    .mobile img.part-type-image {
+        display: none;
+    }
+    
+    .mobile div.part-type-container .part-type-decoration-messages {
+        width: 175px;
+    }
+    
+    .mobile span.part-type-registrations-left-number,
+    .mobile span.part-type-registrations-left-text  {
+        display: none;
+    }
+    
+    .mobile div.part-type-decoration-messages .part-type-description-text {
+        display: none;
+    }
+    
+    .mobile input {
+        vertical-align: top;
+    }
+    
+    .mobile #part_type_anonymous_input_container label,
+    .mobile #part_type_show_public_input_container label,
+    .mobile .addon-component label,
+    .mobile #part_type_individual_company_selection_container label {
+        display: inline-block;
+        width: 200px;
+    }
+    
+    .mobile #part_type_individual_company_input_container label {
+        display: none;
+    }
+    
+    .mobile #part_type_individual_company_input_container input[type="select"],
+    .mobile #part_type_individual_company_input_container input[type="text"] {
+        max-width: 155px;
+        margin: 2px;
+    }
+    
+  
+    
+    /* ******************************************************************************** */
+    /*  Returning Participant Login: fr_cstm_ut_responsive.tpt (mobile - narrow)        */
+    /* ******************************************************************************** */
+    
+    .mobile div#user_type_new_participant_registration_container{
+        float: left;
+        width: 232px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    
+    .mobile div#user_type_login_container {
+        float: left;
+        width: 230px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+        background-color: #f7f7f7;
+        border-style: solid;
+        border-width: 1px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-top-color: #dad7d0;
+        border-bottom-color: #dad7d0;
+        padding: 10px;
+    }
+    
+    .mobile div#user_type_oauth_login_container {
+        float: right;
+        width: 232px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 10px;
+    }
+
+    .mobile div.social-provider-link-container a {
+        display: inline-block;
+        width: 65px;
+        height: 30px;
+    }
+    .mobile div.social-provider-link-container a.aol {
+        background-image: url('../../images/login/responsive/aol-sm.png');
+    }
+    
+    .mobile div.social-provider-link-container a.facebook {
+        background-image: url('../../images/login/responsive/facebook-sm.png');
+    }
+    
+    .mobile div.social-provider-link-container a.google {
+        background-image: url('../../images/login/responsive/google-sm.png');
+    }
+    
+    .mobile div.social-provider-link-container a.linkedin {
+        background-image: url('../../images/login/responsive/linkedIn-sm.png');
+    }
+    
+ 
+    
+    .mobile div.social-provider-link-container a.twitter {
+        background-image: url('../../images/login/responsive/twitter-sm.png');
+    }
+    
+    .mobile div.social-provider-link-container a.yahoo {
+        background-image: url('../../images/login/responsive/yahoo-sm.png');
+    }
+    
+    .mobile div.social-provider-link-container a.aol:active {
+        background-image: url('../../images/login/responsive/aol-sm-down.png');
+    }
+    
+    .mobile div.social-provider-link-container a.facebook:active {
+        background-image: url('../../images/login/responsive/facebook-sm-down.png');
+    }
+    
+    .mobile div.social-provider-link-container a.google:active {
+        background-image: url('../../images/login/responsive/google-sm-down.png');
+    }
+    
+    .mobile div.social-provider-link-container a.linkedin:active {
+        background-image: url('../../images/login/responsive/linkedIn-sm-down.png');
+    }
+    
+  
+    
+    .mobile div.social-provider-link-container a.twitter:active {
+        background-image: url('../../images/login/responsive/twitter-sm-down.png');
+    }
+    
+    .mobile div.social-provider-link-container a.yahoo:active {
+        background-image: url('../../images/login/responsive/yahoo-sm-down.png');
+    }
+    
+    /* ******************************************************************************** */
+    /*  Participation Options Page: fr_cstm_pt_responsive.tpt (mobile all)              */
+    /* ******************************************************************************** */
+    
+    .mobile div.donation-level-row-decoration-container .donation-level-description-text {
+      display: none;
+    }
+    
+    .mobile #participation_options_page .input-container, div.donation-level-row-container {
+        margin-top: 15px;
+    }
+    
+    .mobile div.donation-level-row-container input[type="text"] {
+    	margin-top: 5px;
+    	margin-left: 25px;
+    }
+    
+    .mobile #part_type_individual_company_input_container  {
+        padding-left: 13px;
+    }
+
+    /* ************************************************************* */
+    /* Registration Thanks Page: fr_cstm_thx_repsonsive.tpt          */
+    /* ************************************************************* */
+    .mobile #fr_thanks_page div.reg-summary-participant-info-container {
+        margin: 0;
+    }
+
+    .mobile #fr_thanks_page div#transaction_summary_container {
+        margin: 0;
+    }
+    
+    .mobile #fr_thanks_page span#total_amt_label,
+    .mobile #fr_thanks_page span#total_amt {
+        font-size: 1em;
+    }
+
+    .mobile #fr_thanks_page div.row-container {
+        padding: 2px 0;
+    }
+    
+    .mobile #fr_thanks_page span#email_sent_msg {
+        margin-top: 15px;
+    }
+
+    .mobile #fr_thanks_page div.confirm-email-msg {
+        margin-bottom: 25px;
+        word-wrap: break-word;
+    }
+    
+    .mobile #fr_thanks_page a.next-step {
+        float: none;
+    }
+    
+    .mobile #fr_thanks_page span#email_sent_msg_email {
+        display: block;
+    }
+    
+    /* ************************************************************* */
+    /* Registration Summary Page: fr_reg_summary_responsive_view.tpt */
+    /* ************************************************************* */
+    .mobile #fr_reg_summary_page div.action-button-container .secondary-wrapper,
+    .mobile #fr_reg_summary_page div.action-button-container {
+        float: none;
+    }
+    
+    .mobile #fr_reg_summary_page div.action-button-container {
+        width: auto;
+    }
+    
+    /* ************************************************************* */
+    /* Registration Summary Page + Registration Thanks Page          */
+    /* ************************************************************* */
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-name-info,
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-reg-info,
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-option-info-container,
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-address-info,
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-event-info,
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-total,
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-total > div { 
+        width: auto;
+        display: block;
+    }
+    
+    .mobile div.reg-summary-thanks-common-container span.total-label {
+        float: left;
+    }
+    
+    .mobile div.reg-summary-thanks-common-container span.total-amount {
+        float: right;
+    }
+    
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-event-info {
+        border-left-width: 2px;
+    }
+    
+    .mobile div.reg-summary-thanks-common-container .detail-toggle-link {
+        display: block;
+    }
+    
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-reg-info .mobile-hidden {
+        display: none;
+    }
+    
+    .mobile div.reg-summary-thanks-common-container div.reg-summary-total {
+        margin-right: 0;
+    }
+    
+    /* ************************************************************ */
+    /* Registration Payment Page - fr_cstm_payment_responsive.tpt   */
+    /* ************************************************************ */
+    
+    .mobile #reg_payment_page div.section-body {
+        padding: 10px;
+    }
+    
+    .mobile #reg_payment_page #billing_addr_street1_row input,
+    .mobile #reg_payment_page #billing_addr_street2_row input {
+        width: 185px;
+    }
+    
+    .mobile #reg_payment_page select {
+        max-width: 185px;
+    }
+    
+    .mobile #reg_payment_page #billing_info_name div.form-row {
+        display: block;
+    }
+    
+    .mobile #reg_payment_page span.internal-payment {
+        background-color: transparent;
+        border: none;
+    }
+    
+    .mobile #reg_payment_page span.internal-payment span.payment-type-option {
+        border: 2px solid #e4e2dd;
+    }
+    
+    .mobile #reg_payment_page div.payment-type-selections {
+        width: 240px;
+    }
+    
+    .mobile #reg_payment_page div.payment-type-selections span {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+    
+    .mobile #reg_payment_page span.payment-type-option {
+        margin-bottom: 10px;
+    }
+    
+    .mobile #reg_payment_page span.internal-payment span.payment-type-option:first-child {
+        margin-right: 0;
+    }
+    
+    /* ************************************************************* */
+    /* Find or Join Team: fr_cstm_tm_responsive.tpt                  */
+    /* ************************************************************* */
+    
+    .mobile #team_find_existing div.input-container {
+        margin: 5px 0px;
+    }
+    
+    .mobile #team_find_existing_team_search_container input {
+        width: 214px;
+    }
+    
+    .mobile #team_find_existing_company_selection_container select {
+        width: 230px;
+    }
+    
+    .mobile #team_find_search_button_container {
+        display: block;
+        text-align: center;
+    }
+    
+    .mobile #fr_find_search {
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+    
+    .mobile #team_find_page div.section-body {
+        padding: 10px;
+    }
+    
+    .mobile #team_find_new_team_attributes,
+    .mobile #team_find_new_team_company {
+        width: inherit;
+        float: none;
+    }
+    
+    .mobile #team_find_page input#fr_team_member_goal,
+    .mobile #team_find_page input#fr_team_name {
+        max-width: 205px;
+        width: 205px;
+    }
+    
+    .mobile #team_find_page div#team_find_new_company_selection_container div.combo-select-input-container select  {
+        max-width: 200px;
+        width: 200px;
+    }
+    
+    .mobile #team_find_page div#team_find_new_company_selection_container div.combo-select-input-container input[type="text"] {
+        max-width: 185px;
+        width: 185px;
+    }
+    
+    .mobile #team_find_page div#team_find_new_division_selection_container select {
+        margin: 0px;
+        max-width: 230px;
+        width: 230px;
+    }
+    
+    
+    
+    /* ************************************************************* */
+    /* team search results                                           */
+    /* ************************************************************* */
+    
+    .mobile #team_find_page div#team_find_search_results_container {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .mobile div#team_find_search_results_container div.list-component-cell {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .mobile div#team_find_search_results_container div.list-component-cell.list-component-cell-column-team-name {
+        width: inherit;
+    }
+    
+    .mobile div#team_find_search_results_container div.list-component-cell.list-component-cell-column-captain-name,
+    .mobile div#team_find_search_results_container div.list-component-cell.list-component-cell-column-company-name {
+        width: 100%;
+        display: block;
+    }
+    
+    .mobile div#team_find_search_results_container div.list-component-cell.list-component-cell-column-company-name span.list-component-cell-title-text,
+    .mobile div#team_find_search_results_container div.list-component-cell.list-component-cell-column-captain-name span.list-component-cell-title-text {
+        font-size: .8em;
+    } 
+
+    .mobile div#team_find_search_results_container div.list-component-cell.list-component-cell-column-team-password {
+        display:none;
+    }
+    
+    .mobile div#team_find_search_results_password_hint_container {
+        display:none;
+    }
+
+    .mobile div#team_find_search_results_container div.list-component-cell-column-join-link {
+        width: 100%;
+        float: none;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .mobile div#team_find_existing_company_selection_container select {
+        max-width: 240px;
+        margin-left: 0px;
+    }
+    
+    .mobile div#team_find_registration_type_container {
+        text-align: center;
+        margin: 0;
+    }
+    
+    .mobile span.team-find-alternate-options-seperator {
+        display: none;
+    }
+    
+    .mobile #team_find_registration_type_container div {
+        display: inherit;
+        margin-top: 25px;
+    }
+
+    /* ******************************************************************************** */
+    /*  Survey                                                                          */
+    /* ******************************************************************************** */
+  
+    .mobile div#registration_options_page span.survey-textarea-container textarea {
+        width: 174px;
+        max-width: 174px;
+        height: 40px;
+    }
+  
+    .mobile div#registration_options_page span.survey-textarea-container.survey-large-text-container textarea {
+        height: 60px;
+    }
+  
+    .mobile #team_password_page input[type="password"] {
+        width: 224px;
+    }
+
+    .mobile div.campaign-banner-container {
+        display: none;
+    }
+
+
+    /* *************************************************************  */
+    /* Donations 2 session timeout page                                        */
+    /* ************************************************************* */
+
+    .mobile  #don_timeout_primary_message {
+        font-size: 6em;
+    }
+
+    .mobile #don_timeout_secondary_message {
+       font-size: 2em;
+    }
+
+    .mobile #don_timeout_detailed_message {
+        display: none;
+    }
+}
+/*      Wide Mobile Layout: 480px.
+        Gutters: 24px.
+        Outer margins: 22px.
+        Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .mobile div.registration-page-container div.section-footer {
+        text-align: left;
+    }
+    
+    .mobile div.registration-page-container div.section-body {
+        padding: 10px 4px;
+    }
+    
+    /* ******************************************************************************** */
+    /*  Participation Options Page: fr_cstm_pt_responsive.tpt (mobile all)              */
+    /* ******************************************************************************** */
+    
+    .mobile div.part-type-container .part-type-decoration-messages {
+        width: 370px;
+    }
+    
+    .mobile div.donation-level-row-container input[type="text"] {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    .mobile #part_type_anonymous_input_container label,
+    .mobile #part_type_show_public_input_container label,
+    .mobile .addon-component label,
+    .mobile #part_type_individual_company_selection_container div.input-container label {
+        display: inline-block;
+        width: 380px;
+    }
+    
+    .mobile #part_type_individual_company_input_container  {
+    	padding-left: 20px;
+    }
+    
+     .mobile #part_type_individual_company_input_container select {
+    	max-width: 220px;
+    }
+    
+    /* ******************************************************************************** */
+    /*  Reg Options Page: fr_cstm_reg_responsive.tpt                                    */
+    /* ******************************************************************************** */
+
+    /* Survey radio and checkbox and input elements
+       to ensure label wraps to the right and not under the input */
+    .mobile div#registration_options_page li.input-container label {
+        display: inline-block;
+        max-width: 330px;
+    }
+
+    /* Also prevent wrapping around checkbox/radio, but for elements in the 2-col layout */
+    .mobile div#privacy_component_container label,
+    .mobile div#gift_notice_optin label,
+    .mobile div#email_opt_in_container label,
+    .mobile div#postal_mail_opt_in_container label,
+    .mobile div#remember_me_container label {
+      display: inline-block;
+      max-width: 340px;
+    }
+    
+    /* Constrain the labels to keep both inputs on the same row */
+    .mobile div#cons_info_suffix_container label span.input-label,
+    .mobile div#cons_info_prof_suffix_container label span.input-label {
+      display: inline-block;
+      max-width: 120px;
+    }
+    
+    .mobile select#cons_country,
+    .mobile select#TRIB_COUNTRY,
+    .mobile select#cons_occupation,
+    .mobile select#matchingAddresses {
+      max-width: 380px;
+    }
+
+
+
+    /* ******************************************************************************** */
+    /*  Returning Participant Login: fr_cstm_ut_responsive.tpt (mobile - wide)          */
+    /* ******************************************************************************** */
+    
+    .mobile div#user_type_new_participant_registration_container{
+        float: left;
+        width: 250px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    
+    .mobile div#user_type_login_container {
+        float: left;
+        width: 250px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+        background-color: #f7f7f7;
+        border-style: solid;
+        border-width: 1px;
+        border-left-color: transparent;
+        border-right-color: #dad7d0;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        padding: 10px;
+    }
+    
+    .mobile div#user_type_oauth_login_container {
+        float: right;
+        width: 134px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 10px;
+    }
+
+    .mobile div.social-provider-link-container a {
+        display: inline-block;
+        width: 65px;
+        height: 30px;
+        margin-left: 37px;
+        margin-top: 10px;
+        float: none;
+    }
+
+    .mobile div.social-provider-link-container a.aol {
+        background-image: url('../../images/login/responsive/aol-sm.png');
+    }
+    
+    .mobile div.social-provider-link-container a.facebook {
+        background-image: url('../../images/login/responsive/facebook-sm.png');
+    }
+    
+    .mobile div.social-provider-link-container a.google {
+        background-image: url('../../images/login/responsive/google-sm.png');
+    }
+    
+    .mobile div.social-provider-link-container a.linkedin {
+        background-image: url('../../images/login/responsive/linkedIn-sm.png');
+    }
+    
+ 
+    
+    .mobile div.social-provider-link-container a.twitter {
+        background-image: url('../../images/login/responsive/twitter-sm.png');
+    }
+    
+    .mobile div.social-provider-link-container a.yahoo {
+        background-image: url('../../images/login/responsive/yahoo-sm.png');
+    }
+    
+    .mobile div.social-provider-link-container a.aol:active {
+        background-image: url('../../images/login/responsive/aol-sm-down.png');
+    }
+    
+    .mobile div.social-provider-link-container a.facebook:active {
+        background-image: url('../../images/login/responsive/facebook-sm-down.png');
+    }
+    
+    .mobile div.social-provider-link-container a.google:active {
+        background-image: url('../../images/login/responsive/google-sm-down.png');
+    }
+    
+    .mobile div.social-provider-link-container a.linkedin:active {
+        background-image: url('../../images/login/responsive/linkedIn-sm-down.png');
+    }
+    
+  
+    .mobile div.social-provider-link-container a.twitter:active {
+        background-image: url('../../images/login/responsive/twitter-sm-down.png');
+    }
+    
+    .mobile div.social-provider-link-container a.yahoo:active {
+        background-image: url('../../images/login/responsive/yahoo-sm-down.png');
+    }
+    
+    /* ************************************************************* */
+    /* Registration Thanks Page: fr_cstm_thx_repsonsive.tpt          */
+    /* ************************************************************* */
+    .mobile #fr_thanks_page div.section-footer {
+        text-align: center;
+    }
+    
+    .mobile #fr_thanks_page div.section-body {
+        padding: 10px 5px;
+    }
+    
+    .mobile #fr_thanks_page div.reg-summary-participant-info-container {
+        margin: 0 10px;
+    }
+
+    .mobile #fr_thanks_page div#transaction_summary_container {
+        margin: 0 10px;
+    }
+    
+    /* ************************************************************* */
+    /* Registration Summary Page: fr_reg_summary_responsive_view.tpt */
+    /* ************************************************************* */
+    .mobile #fr_reg_summary_page div.section-footer {
+        text-align: left;
+    }
+    
+    .mobile #fr_reg_summary_page div.action-button-container .step-button {
+        display: block;
+    }
+    
+    .mobile #fr_reg_summary_page div.action-button-container .secondary-wrapper,
+    .mobile #fr_reg_summary_page div.action-button-container {
+        float: right;
+    }
+    
+    .mobile #fr_reg_summary_page div.action-button-container .secondary-wrapper {
+        clear: both;
+        display: block;
+    }
+    
+    /* ************************************************************ */
+    /* Registration Payment Page - fr_cstm_payment_responsive.tpt   */
+    /* ************************************************************ */
+    
+    .mobile #reg_payment_page div.section-body {
+        padding: 10px;
+    }
+    
+    .mobile #reg_payment_page #billing_addr_street1_row input,
+    .mobile #reg_payment_page #billing_addr_street2_row input {
+        width: 300px;
+    }
+    
+    .mobile #reg_payment_page select {
+        max-width: none;
+    }
+    
+    .mobile #reg_payment_page #payment_typepay_typeradio_row {
+        text-align: center;
+    }
+     
+    /* ************************************************************* */
+    /* Find or Join Team: fr_cstm_tm_responsive.tpt                  */
+    /* ************************************************************* */
+    
+    .mobile #team_find_page div#team_find_search_results_container {
+        padding: 10px;
+        margin: 7px;
+    }
+
+    .mobile div#team_find_search_button_container {
+        text-align: left;
+    }
+
+    .mobile div#team_find_search_results_container div.list-component-cell.list-component-cell-column-team-name,
+    .mobile div#team_find_search_results_container div.list-component-cell.list-component-cell-column-company-name {
+        width: 200px;
+        float: left;
+    }
+    
+    .mobile div#team_find_search_results_container div.list-component-cell-column-join-link {
+        width: inherit;
+        margin-top: 5px;
+    }
+    
+    .mobile #team_find_new_company_selection_container select{
+    	max-width: 220px;
+    }
+
+    /* ******************************************************************************** */
+    /*  Survey                                                                          */
+    /* ******************************************************************************** */
+  
+    .mobile div#registration_options_page span.survey-textarea-container textarea {
+        width: 350px;
+        max-width: 350px;
+        height: 50px;
+    }
+  
+    .mobile div#registration_options_page span.survey-textarea-container.survey-large-text-container textarea
+    {
+        height: 80px;
+    }
+
+}
+
+
+
+
+div.tr-status-indicator-container {
+    position: relative;
+}
+
+div.indicator-container {
+    margin-top: 40px;
+}
+div.thermometer-container div.total-goal-info {
+    display: block;
+}
+div.thermometer-container div.total-goal-info span.total-goal-value {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    font-size: 1.3em;
+    width: 100%;
+    font-weight: bold;
+    visibility: hidden;
+}
+div.thermometer-container div.total-goal-info span.total-goal-value::before {
+    content: "Goal:";
+}

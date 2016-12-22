@@ -1,0 +1,37 @@
+/* Registration */
+
+/* TeamRaiser name above reg form */
+.campaign-banner-container {
+	display: none;
+}
+.progress-bar-container {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+span.cons_dob {
+	font-weight: 700;
+	color: #555;
+}
+
+/* Section Headers */
+div.registration-page-container div.section-header {
+	font-family: bold;
+}
+div.registration-page-container div.sub-section-container {
+	background-color: transparent;
+}
+div.registration-page-container div.sub-section-header {
+	font-family: heavy;
+	color: #fff;
+	background-color: #000;
+	padding-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+	#registration_options_page input:not(input[type=checkbox]),#registration_options_page select {
+		width: 100%;
+	}
+	#registration_options_page input[type=checkbox] {
+		width: initial;
+	}
+}
