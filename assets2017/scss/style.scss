@@ -1,16 +1,27 @@
+@import 'modular-scale';
 @import 'variables';
 @import 'mixins';
+
 
 @include font-face('Futura-Bold', 	'FuturaLTPro-Bold');
 @include font-face('Futura-Heavy', 	'FuturaLTPro-Heavy');
 @include font-face('Futura-Medium', 'FuturaLTPro-Medium');
 @include font-face('Futura-light', 	'FuturaLTPro-light');
 
-h1 {
-	font-family: $font-bold;
+html, body, p, a, li {
+  font-family: $font-medium;
+  font-size: 16px;
 }
-h2, h3, h4 {
+h1, .h1 {
+	font-family: $font-bold;
+  @include ms-respond(font-size, 12);
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h3, h4 {
 	font-family: $font-heavy;
+  margin-bottom: 15px;
 }
 h5, h6 {
   font-family: $font-medium;
@@ -18,9 +29,27 @@ h5, h6 {
 strong {
 	font-family: $font-heavy;
 }
-html, body, p, a, li {
-	font-family: $font-medium;
+h2, .h2 {
+  @include ms-respond(font-size, 8);
+  font-family: $font-bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+h3 {
+  @include ms-respond(font-size, 6);
+}
+h4 {
+  @include ms-respond(font-size, 5);
+}
+h5 {
+  @include ms-respond(font-size, 3);
+}
+
+
+
+
+
+
 .font {
 	&-bold {font-family: $font-bold !important;}
 	&-heavy {font-family: $font-heavy !important;}
