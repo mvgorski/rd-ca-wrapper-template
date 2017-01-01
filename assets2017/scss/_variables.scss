@@ -3,13 +3,15 @@
 $white		: #fff;
 $black 		: #000;
 $grey		: #232323;
+$grey-light	: #dedede;
 $grey-dark	: #333;
 $orange		: #e17f25;
 $blue		: #006496;
 $blue-dark 	: darken($blue, 10%);
 $yellow 	: #ffdc00;
-$yellow-dark: dark($yellow, 10%);
+$yellow-dark: darken($yellow, 10%);
 $aqua		: #19F1FF;
+$aqua-dark	: darken($aqua, 15%);
 
 
 

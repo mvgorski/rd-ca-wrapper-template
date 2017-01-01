@@ -121,7 +121,9 @@ end wrapper header -->
 
       <div id="nav-mobile-header" class="row">
          <div class="col-xs-12">
-            <img src="http://placehold.it/120x50" alt="The Ride to Conquer Cancer" class="img-responsive pull-left logo">
+            <!-- <img src="http://placehold.it/120x50" alt="The Ride to Conquer Cancer" 
+            class="img-responsive pull-left logo"> -->
+          <img src="assets2017/img/ride-icon.svg" class="img-responsive pull-left logo" alt="The Ride to Conquer Cancer">
 
          
          <button type="button" class="off-canvas-menu pull-right">
@@ -450,12 +452,19 @@ end wrapper content -->
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-2">
-         <img src="https://placeimg.com/250/100/nature" class="img-responsive center-block" alt="Event Logo">
+         <img src="https://placeimg.com/250/100/nature" class="img-responsive center-block" alt="Event Logo">     
       </div>
       <div class="col-xs-12 col-sm-4 address">
-        <address>
+        <address class="hidden-xs">
           CALL 888-771-2453 [BIKE] • AUG 26-27, 2017<br>
           303-698 Seymour Street, Vancouver BC V6B 3K6<br>
+          Office Hours: Mon-Fri 9 AM - 6.00 PM<br>
+        </address>
+        <address class="visible-xs-block">
+          CALL 888-771-2453 [BIKE]<br>
+          AUG 26-27, 2017<br>
+          303-698 Seymour Street<br>
+          Vancouver BC V6B 3K6<br>
           Office Hours: Mon-Fri 9 AM - 6.00 PM<br>
         </address>
       </div>
@@ -546,13 +555,14 @@ end wrapper content -->
         </ul>
       </div>
       <!-- #footer-mobile-nav -->
-      <div class="col-xs-12 visible-xs-block"> 
+      <div class="col-xs-12 visible-xs-block">
+      <!-- does nav need a good id? -->
       <nav id="footer-mobile-nav">
-      <ul id="" class="list-unstyled">
-        <li>
-          <a role="button" data-toggle="collapse" href="#collapseAbout" aria-expanded="false" aria-controls="collapseAbout">About
+      <ul id="footer-mobile-nav-ul" class="list-unstyled" role="tablist" aria-multiselectable="true">
+        <li class="panel">
+          <a role="button" data-parent="#footer-mobile-nav-ul" data-toggle="collapse" href="#collapseAbout" aria-expanded="false" aria-controls="collapseAbout">About
           </a>
-          <ul id="collapseAbout" class="list-unstyled collapse dropfloor">
+          <ul id="collapseAbout" class="list-unstyled collapse dropfloor" role="tabpanel">
             <li><a href="PageServer?pagename=to17_daw">About the Ride</a></li>
             <li><a href="PageServer?pagename=to17_daw">How We Support You</a></li>
             <li><a href="PageServer?pagename=to17_daw">Ride as a Team</a></li>
@@ -563,10 +573,10 @@ end wrapper content -->
             <li><a href="PageServer?pagename=to17_daw">Photos</a></li>     
           </ul>
         </li>
-        <li>
-          <a role="button" data-toggle="collapse" href="#collapseImpact" aria-expanded="false" aria-controls="collapseImpact">Impact
+        <li class="panel">
+          <a role="button" data-parent="#footer-mobile-nav-ul" data-toggle="collapse" href="#collapseImpact" aria-expanded="false" aria-controls="collapseImpact">Impact
           </a>
-          <ul id="collapseImpact" class="list-unstyled collapse dropfloor">
+          <ul id="collapseImpact" class="list-unstyled collapse dropfloor" role="tabpanel">
             <li><a href="PageServer?pagename=to17_daw">Your Dollars at Work</a></li>
             <li><a href="PageServer?pagename=to17_daw">About the Beneficiary</a></li>
             <li><a href="PageServer?pagename=to17_daw">Tour Princess Margaret</a></li>
@@ -574,19 +584,27 @@ end wrapper content -->
             <li><a href="#">Stories</a></li>
           </ul>
         </li>
-        <li>
-          <a role="button" data-toggle="collapse" href="#collapseFundraise" aria-expanded="false" aria-controls="collapseFundraise">Fundraise
+        <li class="panel">
+          <a role="button" data-parent="#footer-mobile-nav-ul" data-toggle="collapse" href="#collapseFundraise" aria-expanded="false" aria-controls="collapseFundraise">Fundraise
           </a>
-          <ul id="collapseFundraise" class="list-unstyled collapse dropfloor">
+          <ul id="collapseFundraise" class="list-unstyled collapse dropfloor" role="tabpanel">
             <li><a href="PageServer?pagename=to17_daw">Fundraise</a></li>
             <li><a href="PageServer?pagename=to17_daw">Resources</a></li>
             <li><a href="PageServer?pagename=to17_daw">Workplace Giing</a></li>
           </ul>
         </li>
-        <li><a href="#" class="color-yellow">Login</a></li>
         <li><a href="#" class="color-yellow">Register</a></li>
         <li><a href="#" class="color-yellow">Donate</a></li>
         <li><a href="#" class="color-yellow">Get Info</a></li>
+        <li>
+          <ul class="list-inline social">
+            <li><a href="https://www.facebook.com/OntarioRide"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://www.twitter.com/TheOntarioRide"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://www.youtube.com/ontarioride"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="http://instagram.com/ontarioride"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/the-ontario-ride-to-conquer-cancer"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </li>
       </ul>
       </nav>
         
@@ -611,22 +629,27 @@ end wrapper content -->
 
   <!--jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<!--Bootstrap-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <!--Bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
    <!--Push-->
-	<script src="assets2017/js/pushy.js"></script>
+  <script src="assets2017/js/pushy.js"></script>
 
   <script>
-    jQuery('#nav-off-canvas li.pushy-submenu').click(function() {
+    // jQuery('#nav-off-canvas li.pushy-submenu').click(function() {
 
-        $(this).find('i.fa-chevron-down').toggleClass('rotate');
+    //     $(this).find('i.fa-chevron-down').toggleClass('rotate');
 
-    });
+    // });
+
+    // $('#footer-mobile-nav>li>a').collapse({ 
+    //   parent: '#footer-mobile-nav', 
+    //   toggle: true 
+    // })
   </script>
 
 
 
    <!--script.js-->
-	<!-- <script src="js/script.js"></script> -->
+  <!-- <script src="js/script.js"></script> -->
 </body>
 </html>

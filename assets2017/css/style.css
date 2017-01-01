@@ -335,6 +335,9 @@ a {
   padding-top: 15px;
   padding-bottom: 15px; }
 
+#nav-mobile-header img.logo {
+  height: 50px; }
+
 @media screen and (min-width: 1200px) {
   nav#nav-desktop-main-menu > ul > li {
     width: 130px;
@@ -373,9 +376,9 @@ yellow: $yellow
 
 #mobile-cta a {
   color: #000;
-  padding: 10px;
+  padding: 15px 0;
   display: block;
-  font-size: 16px; }
+  font-size: 18px; }
 
 #nav-mobile button i {
   padding: 12px;
@@ -437,6 +440,9 @@ yellow: $yellow
 .pushy-link a {
   color: #ffdc00; }
 
+.pushy a.btn-off-canvas-cta {
+  padding: 10px 30px; }
+
 #footer-wrapper {
   background: #dedede;
   padding-top: 15px;
@@ -462,6 +468,8 @@ yellow: $yellow
       @media (min-width: 1200px) {
         #footer-logos .address address {
           line-height: 2.01136em; } }
+    #footer-logos .address address.visible-xs-block {
+      margin-bottom: 0; }
 
 #footer-links {
   background: #232323;
@@ -500,10 +508,12 @@ yellow: $yellow
 #footer-links #footer-mobile-nav {
   text-align: center; }
   #footer-links #footer-mobile-nav > ul > li > a {
+    display: block;
     font-size: 1.21em;
     line-height: 2;
     font-family: "Futura-Heavy", Helvetica, Arial, sans-serif;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    padding: 5px 0; }
     @media (min-width: 768px) and (max-width: 992px) {
       #footer-links #footer-mobile-nav > ul > li > a {
         font-size: 1.21em; } }
@@ -522,7 +532,8 @@ yellow: $yellow
     text-transform: none; }
     #footer-links #footer-mobile-nav ul.dropfloor > li > a {
       font-size: 1.21em;
-      line-height: 2; }
+      line-height: 2;
+      color: #ffdc00; }
       @media (min-width: 768px) and (max-width: 992px) {
         #footer-links #footer-mobile-nav ul.dropfloor > li > a {
           font-size: 1.21em; } }
@@ -532,6 +543,14 @@ yellow: $yellow
       @media (min-width: 1200px) {
         #footer-links #footer-mobile-nav ul.dropfloor > li > a {
           font-size: 1.3225em; } }
+  #footer-links #footer-mobile-nav #footer-mobile-nav-ul .social {
+    margin-top: 30px; }
+  #footer-links #footer-mobile-nav #footer-mobile-nav-ul .social a {
+    padding: 15px; }
+  #footer-links #footer-mobile-nav #footer-mobile-nav-ul > li.panel {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none; }
 
 @media screen and (max-width: 767px) {
   /*#footer-logos .address address {

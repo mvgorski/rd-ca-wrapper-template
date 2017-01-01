@@ -300,6 +300,9 @@ margin-bottom: 0;
 padding-top: 15px;
 padding-bottom: 15px;
 }
+#nav-mobile-header img.logo {
+  height: 50px;
+}
 @media screen and (min-width:1200px) {
   nav#nav-desktop-main-menu>ul>li {
    width: 130px;
@@ -344,9 +347,9 @@ border-right:0;
 } 
 #mobile-cta a {
 color: $black;
-padding: 10px;
+padding: 15px 0;
 display: block;
-font-size: 16px;
+font-size: 18px;
 }
 #nav-mobile button i {
 padding: 12px;
@@ -391,6 +394,9 @@ text-transform: uppercase;
 .pushy-link a {
 	color: $yellow;
 }
+.pushy a.btn-off-canvas-cta {
+  padding: 10px 30px;
+}
 #footer-wrapper {
 background: #dedede;
 padding-top: 15px;
@@ -414,7 +420,10 @@ padding-bottom: 15px;
 
     address {
     @include ms-respond(line-height, 10);
-    }    
+    }
+    address.visible-xs-block {
+      margin-bottom: 0;
+    }
 
   }
 
@@ -484,10 +493,12 @@ padding-bottom: 15px;
   text-align: center;
 
   >ul>li>a {
+    display: block;
     @include ms-respond(font-size, 4);
     line-height: 2;
     font-family: $font-heavy;
     letter-spacing: 1px;
+    padding: 5px 0;
     &:focus {
       color: $aqua;
     }
@@ -504,7 +515,22 @@ padding-bottom: 15px;
     >li>a {
       @include ms-respond(font-size, 4);
       line-height: 2;
+      color: $yellow;
     }
+  }
+
+  #footer-mobile-nav-ul .social {
+    margin-top: 30px;
+  }
+
+  #footer-mobile-nav-ul .social a {
+    padding: 15px;
+  }
+
+  #footer-mobile-nav-ul>li.panel {
+    background-color: transparent;
+    border:0;
+    box-shadow: none;
   }
 
 }
