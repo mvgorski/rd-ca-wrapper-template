@@ -396,10 +396,11 @@ yellow: $yellow
 
 #nav-off-canvas #mobile-off-canvas-social a {
   padding: 20px;
-  color: #19F1FF; }
+  color: #19F1FF;
+  font-size: 2em; }
 
 #mobile-off-canvas-social i {
-  font-size: 22px; }
+  /*font-size: 22px;*/ }
 
 .btn-off-canvas-cta {
   display: block;
@@ -408,11 +409,30 @@ yellow: $yellow
   color: #000;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-size: 16px; }
+  font-size: 1.155em; }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .btn-off-canvas-cta {
+      font-size: 1.155em; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .btn-off-canvas-cta {
+      font-size: 1.176em; } }
+  @media (min-width: 1200px) {
+    .btn-off-canvas-cta {
+      font-size: 1.2075em; } }
 
 .pushy-submenu a {
   color: #fff;
-  font-size: 16px; }
+  /*font-size: 16px;*/
+  font-size: 1.155em; }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .pushy-submenu a {
+      font-size: 1.155em; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .pushy-submenu a {
+      font-size: 1.176em; } }
+  @media (min-width: 1200px) {
+    .pushy-submenu a {
+      font-size: 1.2075em; } }
 
 .pushy-link a {
   color: #ffdc00; }
@@ -424,5 +444,103 @@ yellow: $yellow
 
 #nav-off-canvas i {
   /*margin-left: 10px;*/ }
+
+#footer-logos {
+  background: #000;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  #footer-logos .address {
+    color: #fff; }
+    #footer-logos .address address {
+      line-height: 1.61051em; }
+      @media (min-width: 768px) and (max-width: 992px) {
+        #footer-logos .address address {
+          line-height: 1.61051em; } }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        #footer-logos .address address {
+          line-height: 1.76234em; } }
+      @media (min-width: 1200px) {
+        #footer-logos .address address {
+          line-height: 2.01136em; } }
+
+#footer-links {
+  background: #232323;
+  padding-top: 30px; }
+  #footer-links ul.list-unstyled {
+    text-transform: uppercase;
+    font-family: "Futura-Light", Helvetica, Arial, sans-serif;
+    margin-bottom: 30px; }
+    #footer-links ul.list-unstyled li {
+      margin-bottom: 10px; }
+    #footer-links ul.list-unstyled a {
+      color: #fff;
+      /*font-size: .85em;*/ }
+      #footer-links ul.list-unstyled a:hover {
+        color: #dedede; }
+      #footer-links ul.list-unstyled a:focus {
+        color: #dedede; }
+  #footer-links ul.social {
+    text-align: center;
+    margin-bottom: 30px; }
+    #footer-links ul.social a {
+      color: #19F1FF; }
+      #footer-links ul.social a:focus {
+        color: #00bfcc; }
+      #footer-links ul.social a:hover {
+        color: #00bfcc; }
+    #footer-links ul.social i {
+      font-size: 2em;
+      padding: 10px 5px; }
+  #footer-links p {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; }
+
+#footer-links #footer-mobile-nav {
+  text-align: center; }
+  #footer-links #footer-mobile-nav > ul > li > a {
+    font-size: 1.21em;
+    line-height: 2;
+    font-family: "Futura-Heavy", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px; }
+    @media (min-width: 768px) and (max-width: 992px) {
+      #footer-links #footer-mobile-nav > ul > li > a {
+        font-size: 1.21em; } }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      #footer-links #footer-mobile-nav > ul > li > a {
+        font-size: 1.2544em; } }
+    @media (min-width: 1200px) {
+      #footer-links #footer-mobile-nav > ul > li > a {
+        font-size: 1.3225em; } }
+    #footer-links #footer-mobile-nav > ul > li > a:focus {
+      color: #19F1FF; }
+    #footer-links #footer-mobile-nav > ul > li > a.color-yellow {
+      color: #ffdc00; }
+  #footer-links #footer-mobile-nav ul.dropfloor {
+    margin-top: 10px;
+    text-transform: none; }
+    #footer-links #footer-mobile-nav ul.dropfloor > li > a {
+      font-size: 1.21em;
+      line-height: 2; }
+      @media (min-width: 768px) and (max-width: 992px) {
+        #footer-links #footer-mobile-nav ul.dropfloor > li > a {
+          font-size: 1.21em; } }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        #footer-links #footer-mobile-nav ul.dropfloor > li > a {
+          font-size: 1.2544em; } }
+      @media (min-width: 1200px) {
+        #footer-links #footer-mobile-nav ul.dropfloor > li > a {
+          font-size: 1.3225em; } }
+
+@media screen and (max-width: 767px) {
+  /*#footer-logos .address address {
+    margin-top: 20px;
+    text-align: center;
+
+  }*/
+  #footer-logos .col-xs-12 {
+    margin-bottom: 20px;
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

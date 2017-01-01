@@ -301,10 +301,10 @@ padding-top: 15px;
 padding-bottom: 15px;
 }
 @media screen and (min-width:1200px) {
-nav#nav-desktop-main-menu>ul>li {
- width: 130px;
- text-align: center;
-}
+  nav#nav-desktop-main-menu>ul>li {
+   width: 130px;
+   text-align: center;
+  }
 }
 nav#nav-desktop-main-menu>ul>li>a {
 color: #fff;
@@ -369,9 +369,10 @@ padding: 10px;
 #nav-off-canvas #mobile-off-canvas-social a {
 	padding: 20px;
 	color: $aqua;
+  font-size: 2em;
 }
 #mobile-off-canvas-social i {
-	font-size: 22px;
+	/*font-size: 22px;*/
 }
 .btn-off-canvas-cta {
 display: block;
@@ -380,11 +381,12 @@ border-radius:0;
 color: $black;
 margin-bottom: 10px;
 text-transform: uppercase;
-font-size: 16px;
+@include ms-respond(font-size, 3);
 }
 .pushy-submenu a {
 	color: $white;
-	font-size: 16px;
+	/*font-size: 16px;*/
+  @include ms-respond(font-size, 3);
 }
 .pushy-link a {
 	color: $yellow;
@@ -398,5 +400,129 @@ padding-bottom: 15px;
 	/*margin-left: 10px;*/
 }
 
+
+
+
+
+#footer-logos {
+  background: $black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .address {
+    color: $white;
+
+    address {
+    @include ms-respond(line-height, 10);
+    }    
+
+  }
+
+
+
+}
+
+#footer-links  {
+  background: $grey;
+  padding-top: 30px;
+  
+
+  ul.list-unstyled {
+    text-transform: uppercase;
+    font-family: $font-light;
+    margin-bottom: 30px;
+    
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+    color: $white;
+    /*font-size: .85em;*/
+
+      &:hover {
+        color: $grey-light;
+      }
+      &:focus {
+        color: $grey-light;
+      }
+    }
+  }
+
+
+  ul.social {
+    text-align: center;
+    margin-bottom: 30px;
+
+    a {
+      color: $aqua;
+      &:focus {
+        color: $aqua-dark;
+      }
+      &:hover {
+        color: $aqua-dark;
+      }
+    }
+    i {
+      font-size: 2em;
+      padding: 10px 5px;
+    }
+  }
+
+  
+  p {
+    color: $white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+  }
+}
+
+
+#footer-links #footer-mobile-nav {
+  text-align: center;
+
+  >ul>li>a {
+    @include ms-respond(font-size, 4);
+    line-height: 2;
+    font-family: $font-heavy;
+    letter-spacing: 1px;
+    &:focus {
+      color: $aqua;
+    }
+    &.color-yellow {
+      color: $yellow;
+    }
+
+  }
+  
+  ul.dropfloor {
+    margin-top: 10px;
+    text-transform: none;
+
+    >li>a {
+      @include ms-respond(font-size, 4);
+      line-height: 2;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+  /*#footer-logos .address address {
+    margin-top: 20px;
+    text-align: center;
+
+  }*/
+  #footer-logos .col-xs-12 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+}
 
 
