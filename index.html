@@ -9,8 +9,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!--Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <!--Bootstrap 4-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
  
@@ -29,16 +29,16 @@ end wrapper header -->
 <header id="nav-wrapper">
 <!-- .site-overlay for when off-canvas menu is active -->
 <div class="site-overlay"></div>
-   <div id="nav-desktop" class="container hidden-xs">
+   <div id="nav-desktop" class="container hidden-sm-down">
       <div class="row">
          <div class="col-sm-3">
             <a href="#">
-               <img src="http://placehold.it/215x80" alt="The Ride to Conquer Cancer" class="img-responsive">
+               <img src="http://placehold.it/215x80" alt="The Ride to Conquer Cancer" class="img-fluid">
             </a>
          </div>
          <div class="col-sm-9">
             <div id="nav-desktop-cta" class="row">
-               <div class="col-sm-12 col-lg-offset-1 col-lg-11 text-uppercase">
+               <div class="col-sm-12 offset-lg-1 col-lg-11 text-uppercase">
                   <div class="col-sm-3"><a href="" class="btn btn-yellow-cta">Register</a></div>
                   <div class="col-sm-3"><a href="" class="btn btn-yellow-cta">Donate</a></div>
                   <div class="col-sm-3"><a href="" class="btn btn-yellow-cta">Get Info</a></div>
@@ -46,11 +46,11 @@ end wrapper header -->
                </div>
             </div>
             <div class="row">
-               <div class="col-sm-12">
-                  <nav id="nav-desktop-main-menu" class="navbar">
-                     <ul class="nav navbar-nav text-uppercase">
-                        <li class="dropdown">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+               <div class="col-sm-12 col-md-11">
+                  <nav id="nav-desktop-main-menu" class="">
+                     <ul class="nav nav-inline text-uppercase">
+                        <li class="nav-item dropdown">
+                           <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
                               <ul class="dropdown-menu">
                                  <li><a href="#">About the Ride</a></li>
                                  <li><a href="#">How We Support</a></li>
@@ -60,8 +60,8 @@ end wrapper header -->
                                  <li><a href="#">Photos</a></li>
                               </ul>
                        </li>
-                       <li class="dropdown">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Impact</a>
+                       <li class="nav-item dropdown">
+                           <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Impact</a>
                               <ul class="dropdown-menu">
                                  <li><a href="#">Your Dollars at Work</a></li>
                                  <li><a href="#">About Cancer Foundation</a></li>
@@ -71,15 +71,15 @@ end wrapper header -->
                                  <li><a href="#">Photos</a></li>
                               </ul>
                          </li>
-                        <li class="dropdown">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fundraising</a>
+                        <li class="nav-item dropdown">
+                           <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fundraising</a>
                               <ul class="dropdown-menu">
                                  <li><a href="">Fundraise</a></li>
                                  <li><a href="">Resources</a></li>
                               </ul>
                        </li>
-                        <li class="dropdown">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Training</a>
+                        <li class="nav-item dropdown">
+                           <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Training</a>
                            <ul class="dropdown-menu">
                               <li><a href="#">Action</a></li>
                               <li><a href="#">Another action</a></li>
@@ -90,8 +90,8 @@ end wrapper header -->
                               <li><a href="#">One more separated link</a></li>
                             </ul>
                           </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Participants</a>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Participants</a>
                             <ul class="dropdown-menu">
                               <li><a href="#">Action</a></li>
                               <li><a href="#">Another action</a></li>
@@ -117,13 +117,13 @@ end wrapper header -->
 
 
 
-   <div id="nav-mobile" class="container visible-xs-block">
+   <div id="nav-mobile" class="container-fluid hidden-md-up">
 
       <div id="nav-mobile-header" class="row">
          <div class="col-xs-12">
             <!-- <img src="http://placehold.it/120x50" alt="The Ride to Conquer Cancer" 
-            class="img-responsive pull-left logo"> -->
-          <img src="assets2017/img/ride-icon.svg" class="img-responsive pull-left logo" alt="The Ride to Conquer Cancer">
+            class="img-fluid pull-left logo"> -->
+          <img src="assets2017/img/ride-icon.svg" class="img-fluid pull-left logo" alt="The Ride to Conquer Cancer">
 
          
          <button type="button" class="off-canvas-menu pull-right">
@@ -185,7 +185,7 @@ end wrapper header -->
                </li>
            </ul>
 
-            <ul id="mobile-off-canvas-social" class="list-inline text-center">
+            <ul id="mobile-off-canvas-social" class="list-inline text-xs-center">
               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
@@ -202,14 +202,14 @@ end wrapper header -->
 
 
 
-      <div id="mobile-cta" class="row text-uppercase">
-         <div class="col-xs-4 text-center">
+      <div id="mobile-cta" class="row text-uppercase text-xs-center">
+         <div class="col-xs-4">
             <a href="#">Register</a>
          </div>
-         <div class="col-xs-4 text-center">
+         <div class="col-xs-4">
             <a href="#">Donate</a>
          </div>
-         <div class="col-xs-4 text-center">
+         <div class="col-xs-4">
             <a href="#">Info</a>
          </div>
       </div>
@@ -252,11 +252,11 @@ end wrapper header -->
 </div>
 end wrapper content -->
 
+<div id="page-wrapper" class="page-wrapper-content">
 
 <div class="container">
-
    <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12 px-0">
 
           <div id="home-carousel" data-interval="3000" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -266,28 +266,28 @@ end wrapper content -->
             </ol>
             <!-- start of to17_home_carousel_slides -->
             <div class="carousel-inner" role="listbox">
-            <div class="item active">
+            <div class="carousel-item active">
                 <a href="#" class="" title="">
-                  <img class="img-responsive" src="http://to17.conquercancer.ca/images/content/pagebuilder/RCCA_SnowmanHPSlider_2400x1000.jpg" alt="">
+                  <img class="img-fluid" src="http://to17.conquercancer.ca/images/content/pagebuilder/RCCA_SnowmanHPSlider_2400x1000.jpg" alt="">
                 </a>
             </div>
-            <div class="item">
+            <div class="carousel-item">
                <a href="#" class="" title="">
-                    <img class="img-responsive" src="http://to17.conquercancer.ca/assets2017/img/referral-slide-02.jpg" alt="">
+                    <img class="img-fluid" src="http://to17.conquercancer.ca/assets2017/img/referral-slide-02.jpg" alt="">
                </a>
             </div>
-            <div class="item">
+            <div class="carousel-item">
                 <a href="" class="" title="">
-                    <img class="img-responsive" src="http://to17.conquercancer.ca/images/content/pagebuilder/HC-ThirdPolkaDotWinner.jpg" alt="Polka Dot Challenge">
+                    <img class="img-fluid" src="http://to17.conquercancer.ca/images/content/pagebuilder/HC-ThirdPolkaDotWinner.jpg" alt="Polka Dot Challenge">
                 </a>
             </div>
             </div>
             <a class="left carousel-control" href="#home-carousel" role="button" data-slide="prev">
-               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+               <span class="icon-prev" aria-hidden="true"></span>
                <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#home-carousel" role="button" data-slide="next">
-               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+               <span class="icon-next" aria-hidden="true"></span>
                <span class="sr-only">Next</span>
             </a>
           </div>
@@ -295,7 +295,7 @@ end wrapper content -->
 
       </div>
    </div>
-   <div class="row text-center">
+   <div class="row text-xs-center">
       <div class="col-xs-12">
          <h1>An Epic Journey through the Countryside</h1>
          <h2>An Epic Journey through the Countryside</h2>
@@ -332,26 +332,26 @@ end wrapper content -->
 
       </div>
    </div>
-   <div class="row text-center">
+   <div class="row text-xs-center">
 
       <div class="col-xs-12 col-sm-4">
-         <img src="http://placehold.it/200x200" alt="The Ride to Conquer Cancer">
+         <img src="http://placehold.it/200x200" class="img-fluid" alt="The Ride to Conquer Cancer">
          <h1>Step 1: Register</h1>
          <p>Start your journey to experience the ride of your life.</p>
       </div>
       <div class="col-xs-12 col-sm-4">
-         <img src="http://placehold.it/200x200" alt="The Ride to Conquer Cancer">
+         <img src="http://placehold.it/200x200" class="img-fluid" alt="The Ride to Conquer Cancer">
          <h2 class="h1">Step 2: Get Ready</h2>
          <p>Your personal coach will guide you step-by-step in reaching your goal.</p>
       </div>
       <div class="col-xs-12 col-sm-4">
-         <img src="http://placehold.it/200x200" alt="The Ride to Conquer Cancer">
+         <img src="http://placehold.it/200x200" class="img-fluid" alt="The Ride to Conquer Cancer">
          <h3 class="h1">Step 3: Be Epic</h3>
          <p>Be part of a game-changing movement to conquer cancer.</p>
       </div>
 
    </div>
-   <div class="row text-center">
+   <div class="row text-xs-center">
       <div class="col-xs-12 col-sm-6">
          <a href="#">About the Ride</a>
       </div>
@@ -361,7 +361,7 @@ end wrapper content -->
    </div>
 
    <div class="row">
-      <div class="col-xs-12 col-sm-3">
+      <div class="col-xs-12 col-sm-6 col-md-3">
          <h4>Top Fundraisers</h4>
          <ol>
             <li>Jeanne Babadoro</li>
@@ -376,7 +376,7 @@ end wrapper content -->
             <li>Jack Tarney</li>
          </ol>
       </div>
-      <div class="col-xs-12 col-sm-3">
+      <div class="col-xs-12 col-sm-6 col-md-3">
          <h4>Top Teams</h4>
          <ol>
             <li>Jeanne Babadoro</li>
@@ -391,7 +391,7 @@ end wrapper content -->
             <li>Jack Tarney</li>
          </ol>
       </div>
-      <div class="col-xs-12 col-sm-3">
+      <div class="col-xs-12 col-sm-6 col-md-3">
          <h4>Top Crews</h4>
          <ol>
             <li>Jeanne Babadoro</li>
@@ -406,7 +406,7 @@ end wrapper content -->
             <li>Jack Tarney</li>
          </ol>
       </div>
-      <div class="col-xs-12 col-sm-3">
+      <div class="col-xs-12 col-sm-6 col-md-3">
          <h4>Top Ambassadors</h4>
          <ol>
             <li>Jeanne Babadoro</li>
@@ -432,9 +432,7 @@ end wrapper content -->
 
 
 </div><!-- homepage placeholder .container -->
-
-
-
+</div><!-- #page-wrapper -->
 
 
 
@@ -452,15 +450,15 @@ end wrapper content -->
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-2">
-         <img src="https://placeimg.com/250/100/nature" class="img-responsive center-block" alt="Event Logo">     
+         <img src="https://placeimg.com/250/100/nature" class="img-fluid center-block" alt="Event Logo">     
       </div>
       <div class="col-xs-12 col-sm-4 address">
-        <address class="hidden-xs">
+        <address class="hidden-sm-down">
           CALL 888-771-2453 [BIKE] • AUG 26-27, 2017<br>
           303-698 Seymour Street, Vancouver BC V6B 3K6<br>
           Office Hours: Mon-Fri 9 AM - 6.00 PM<br>
         </address>
-        <address class="visible-xs-block">
+        <address class="hidden-md-up">
           CALL 888-771-2453 [BIKE]<br>
           AUG 26-27, 2017<br>
           303-698 Seymour Street<br>
@@ -469,13 +467,13 @@ end wrapper content -->
         </address>
       </div>
       <div class="col-xs-12 col-sm-3">
-         <img src="https://placeimg.com/400/125/nature" class="img-responsive center-block" alt="Beneficiary Logo">
+         <img src="https://placeimg.com/400/125/nature" class="img-fluid center-block" alt="Beneficiary Logo">
       </div>
       <div class="col-xs-12 col-sm-1">
-         <img src="https://placeimg.com/400/125/nature" class="img-responsive center-block" alt="Beneficiary Logo">
+         <img src="https://placeimg.com/400/125/nature" class="img-fluid center-block" alt="Beneficiary Logo">
       </div>
       <div class="col-xs-12 col-sm-2">
-         <img src="https://placeimg.com/400/125/nature" class="img-responsive center-block" alt="Beneficiary Logo">
+         <img src="https://placeimg.com/400/125/nature" class="img-fluid center-block" alt="Beneficiary Logo">
       </div>
    </div>
 </div>
@@ -486,13 +484,13 @@ end wrapper content -->
 
     <div class="row">
 
-      <div class="hidden-xs col-sm-3">
+      <div class="hidden-sm-down col-sm-3">
         <ul class="list-inline social">
-          <li><a href="https://www.facebook.com/OntarioRide"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="http://www.twitter.com/TheOntarioRide"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="http://www.youtube.com/ontarioride"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="http://instagram.com/ontarioride"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com/company/the-ontario-ride-to-conquer-cancer"><i class="fa fa-linkedin"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.facebook.com/OntarioRide"><i class="fa fa-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="http://www.twitter.com/TheOntarioRide"><i class="fa fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="http://www.youtube.com/ontarioride"><i class="fa fa-youtube"></i></a></li>
+          <li class="list-inline-item"><a href="http://instagram.com/ontarioride"><i class="fa fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.linkedin.com/company/the-ontario-ride-to-conquer-cancer"><i class="fa fa-linkedin"></i></a></li>
         </ul>
         <ul class="list-unstyled">
           <li><a href="PageServer?pagename=to17_about_the_ride">About the Ride</a></li>
@@ -506,7 +504,7 @@ end wrapper content -->
         </ul>
       </div>
 
-      <div class="hidden-xs col-sm-3">
+      <div class="hidden-sm-down col-sm-3">
         <ul class="list-unstyled">
           <li><a href="PageServer?pagename=to17_daw">Your Dollars at Work</a></li>
           <li><a href="PageServer?pagename=to17_daw">About the Beneficiary</a></li>
@@ -525,7 +523,7 @@ end wrapper content -->
           <li><a href="PageServer?pagename=to17_daw">Outfitters</a></li>
         </ul>
       </div>
-      <div class="hidden-xs col-sm-3">
+      <div class="hidden-sm-down col-sm-3">
         <ul class="list-unstyled">
           <li><a href="PageServer?pagename=to17_daw">Rally for the Decade</a></li>
           <li><a href="PageServer?pagename=to17_daw">Polka Dot Jerseys</a></li>
@@ -538,7 +536,7 @@ end wrapper content -->
           <li><a href="PageServer?pagename=to17_daw">Newsroom</a></li>
         </ul>
       </div>
-      <div class="hidden-xs col-sm-3">
+      <div class="hidden-sm-down col-sm-3">
         <ul class="list-unstyled">
           <li><a href="PageServer?pagename=to17_daw">Social Media</a></li>
         </ul>
@@ -555,7 +553,7 @@ end wrapper content -->
         </ul>
       </div>
       <!-- #footer-mobile-nav -->
-      <div class="col-xs-12 visible-xs-block">
+      <div class="col-xs-12 hidden-md-up">
       <!-- does nav need a good id? -->
       <nav id="footer-mobile-nav">
       <ul id="footer-mobile-nav-ul" class="list-unstyled" role="tablist" aria-multiselectable="true">
@@ -598,11 +596,11 @@ end wrapper content -->
         <li><a href="#" class="color-yellow">Get Info</a></li>
         <li>
           <ul class="list-inline social">
-            <li><a href="https://www.facebook.com/OntarioRide"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="http://www.twitter.com/TheOntarioRide"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="http://www.youtube.com/ontarioride"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="http://instagram.com/ontarioride"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/the-ontario-ride-to-conquer-cancer"><i class="fa fa-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/OntarioRide"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="http://www.twitter.com/TheOntarioRide"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="http://www.youtube.com/ontarioride"><i class="fa fa-youtube"></i></a></li>
+            <li class="list-inline-item"><a href="http://instagram.com/ontarioride"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/the-ontario-ride-to-conquer-cancer"><i class="fa fa-linkedin"></i></a></li>
           </ul>
         </li>
       </ul>
@@ -629,8 +627,8 @@ end wrapper content -->
 
   <!--jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <!--Bootstrap-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <!--Bootstrap 4-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
    <!--Push-->
   <script src="assets2017/js/pushy.js"></script>
 
