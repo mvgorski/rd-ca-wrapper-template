@@ -369,7 +369,7 @@ a {
     text-align: center; } }
 nav#nav-desktop-main-menu > ul > li > a {
   color: #fff;
-  padding: .5rem 0;
+  padding: .5rem;
   display: block; }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
