@@ -10,11 +10,16 @@
 
 html, body, p, a, li {
   font-family: $font-medium;
-  font-size: 16px;
+  @include ms-respond(font-size, 0);
+}
+@media screen and (min-width: 1200px) {
+  p {
+    @include ms-respond(font-size, 1);
+  }
 }
 h1, .h1 {
 	font-family: $font-bold;
-  @include ms-respond(font-size, 12);
+  @include ms-respond(font-size, 16);
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -30,25 +35,20 @@ strong {
 	font-family: $font-heavy;
 }
 h2, .h2 {
-  @include ms-respond(font-size, 8);
+  @include ms-respond(font-size, 12);
   font-family: $font-bold;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 h3 {
-  @include ms-respond(font-size, 6);
+  @include ms-respond(font-size, 10);
 }
 h4 {
-  @include ms-respond(font-size, 5);
+  @include ms-respond(font-size, 8);
 }
 h5 {
-  @include ms-respond(font-size, 3);
+  @include ms-respond(font-size, 7);
 }
-
-
-
-
-
 
 .font {
 	&-bold {font-family: $font-bold !important;}
@@ -247,13 +247,13 @@ a {
 
 
 .btn-yellow-cta,.btn-login-cta {
-	padding-top: 13px;
-	padding-bottom: 13px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	font-family: $font-heavy;
 	border-radius: 0;
 	letter-spacing: .5px;
 	@include chameleon;
-	font-size: 16px;	
+	@include ms-respond(font-size, 1);	
 }
 .btn-yellow-cta {
 	background: $yellow;
@@ -274,11 +274,10 @@ a {
 	border: 2px solid $black;
 	background: $yellow;
 }
-.pad-10 {
-padding: 10px;
-}
-.pad-30 {
-padding: 30px;
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .btn-yellow-cta {
+    padding: 1rem .5rem;
+  }
 }
 .rotate {
 	-webkit-transform: rotate(180deg);
@@ -288,29 +287,39 @@ padding: 30px;
     transform: rotate(180deg);
 }
 #nav-desktop-cta {
-margin-bottom: 15px;
+margin-bottom: 1rem;
 }
 #nav-desktop-cta a {
 width: 100%;
 }
-.navbar {
-margin-bottom: 0;
-}
+
+
+
 #nav-mobile-header {
-padding-top: 15px;
-padding-bottom: 15px;
+padding-top: 1rem;
+padding-bottom: 1rem;
 }
 #nav-mobile-header img.logo {
   height: 50px;
 }
 @media screen and (min-width:1200px) {
   nav#nav-desktop-main-menu>ul>li {
-   width: 130px;
+   width: 19%;
    text-align: center;
   }
 }
 nav#nav-desktop-main-menu>ul>li>a {
 color: #fff;
+padding: .5rem 0;
+display: block;
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  nav#nav-desktop-main-menu>ul>li>a {
+    padding: .3rem;
+  }
+}
+.nav-inline .nav-item+.nav-item, .nav-inline .nav-link+.nav-link {
+  margin-left: 0;
 }
 #nav-desktop-main-menu>ul>li>a:hover,#nav-desktop-main-menu>ul>li>a:focus {
 background: $yellow;
@@ -319,21 +328,38 @@ color: $black;
 #nav-desktop-main-menu .dropdown li {
 text-transform: none;
 }
-
-/*
-yellow: $yellow
-*/
 #nav-wrapper {
 background: $black;
 }
-
 #nav-desktop {
-padding-top: 15px;
+padding-top: 1rem;
 /*padding-bottom: 15px;*/
 }
 .dropdown:hover .dropdown-menu {
-display: block;
+/*display: block;*/
 }
+#nav-desktop-main-menu .dropdown-menu {
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.5);
+  background: rgba(0,0,0,.85);
+  border-radius: 0;
+  margin-top: 0;
+}
+#nav-desktop-main-menu .dropdown-menu a {
+  color: $white;
+  line-height: 2;
+  padding: 1rem;
+  display: block;
+
+  &:hover {
+    background: $black;
+  }
+  &:focus {
+    background: $black;
+  }
+}
+/*#nav-desktop-main-menu .dropdown-menu li:hover {
+  background: $black;
+}*/
 
 
 #mobile-cta {
@@ -347,7 +373,7 @@ border-right:0;
 } 
 #mobile-cta a {
 color: $black;
-padding: 15px 0;
+padding: 1rem 0;
 display: block;
 font-size: 18px;
 }
@@ -364,7 +390,7 @@ background: $black;
 border: 0; 
 }
 #nav-off-canvas {
-padding: 10px;
+padding: .8rem;
 }
 #mobile-off-canvas-social {
 	margin-left: 0;
@@ -447,7 +473,7 @@ padding-bottom: 15px;
 
     a {
     color: $white;
-    /*font-size: .85em;*/
+    @include ms-respond(font-size, -2);
 
       &:hover {
         color: $grey-light;
@@ -460,7 +486,7 @@ padding-bottom: 15px;
 
 
   ul.social {
-    text-align: center;
+    /*text-align: center;*/
     margin-bottom: 30px;
 
     a {
@@ -473,7 +499,7 @@ padding-bottom: 15px;
       }
     }
     i {
-      font-size: 2em;
+      @include ms-respond(font-size, 5);
       padding: 10px 5px;
     }
   }
@@ -551,4 +577,10 @@ padding-bottom: 15px;
 
 }
 
+#page-wrapper {
+  background: $grey-light;
+}
+#page-wrapper>.container {
+  background: $white;
+}
 
