@@ -406,6 +406,10 @@ nav#nav-desktop-main-menu > ul > li > a {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   #nav-desktop-main-menu .dropdown-menu {
     width: 200%; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #nav-desktop-main-menu ul > li:last-child .dropdown-menu {
+    right: 0;
+    left: initial; } }
 #nav-desktop-main-menu .dropdown-menu a {
   color: #fff;
   line-height: 2;
