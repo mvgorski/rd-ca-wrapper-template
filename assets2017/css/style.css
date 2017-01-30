@@ -399,8 +399,13 @@ nav#nav-desktop-main-menu > ul > li > a {
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5);
   background: rgba(0, 0, 0, 0.85);
   border-radius: 0;
-  margin-top: 0; }
+  margin-top: 0;
+  width: 220px;
+  /* because position:absolute */ }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #nav-desktop-main-menu .dropdown-menu {
+    width: 200%; } }
 #nav-desktop-main-menu .dropdown-menu a {
   color: #fff;
   line-height: 2;
