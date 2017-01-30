@@ -594,9 +594,49 @@ padding-bottom: 15px;
 }
 
 #page-wrapper {
-  background: $grey-light;
+  /*background: $grey-light;*/
 }
 #page-wrapper>.container {
   background: $white;
 }
 
+
+/*
+********** to be transferred to Convio User stylesheet to override before CF custom *******
+*/
+
+/* TeamRaiser Reg header */
+.campaign-banner-container {
+        display: none;/* Hide TeamRaiser name at top of Reg form */
+    }
+    
+
+/* progress bar at top of page */
+.progress-bar-container {
+    padding-left: 1em;
+    text-align: center;
+}
+/* TeamRaiser Reg */
+div.registration-page-container div.section-container {
+    margin: 0;
+}
+div.registration-page-container div.section-header {
+    @include ms-respond(font-size, 10);
+    padding: .5em;
+}
+div.registration-page-container div.section-sub-header.empty {
+    display: none;/* space creating div */
+}
+div.registration-page-container div.sub-section-header {
+    @include ms-respond(font-size, 8);
+    padding: .5em;
+}
+div#reg_instr_container {
+    padding: 1em;
+}
+div.required-indicator-legend {
+    padding: 1em;
+}
+#cons_info_component_container {
+
+}

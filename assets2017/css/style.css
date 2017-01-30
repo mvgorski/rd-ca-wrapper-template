@@ -641,9 +641,62 @@ nav#nav-desktop-main-menu > ul > li > a {
     margin-bottom: 20px;
     text-align: center; } }
 #page-wrapper {
-  background: #dedede; }
+  /*background: $grey-light;*/ }
 
 #page-wrapper > .container {
   background: #fff; }
+
+/*
+********** to be transferred to Convio User stylesheet to override before CF custom *******
+*/
+/* TeamRaiser Reg header */
+.campaign-banner-container {
+  display: none;
+  /* Hide TeamRaiser name at top of Reg form */ }
+
+/* progress bar at top of page */
+.progress-bar-container {
+  padding-left: 1em;
+  text-align: center; }
+
+/* TeamRaiser Reg */
+div.registration-page-container div.section-container {
+  margin: 0; }
+
+div.registration-page-container div.section-header {
+  font-size: 1.61051em;
+  padding: .5em; }
+  @media (min-width: 768px) and (max-width: 992px) {
+    div.registration-page-container div.section-header {
+      font-size: 1.61051em; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    div.registration-page-container div.section-header {
+      font-size: 1.76234em; } }
+  @media (min-width: 1200px) {
+    div.registration-page-container div.section-header {
+      font-size: 2.01136em; } }
+
+div.registration-page-container div.section-sub-header.empty {
+  display: none;
+  /* space creating div */ }
+
+div.registration-page-container div.sub-section-header {
+  font-size: 1.4641em;
+  padding: .5em; }
+  @media (min-width: 768px) and (max-width: 992px) {
+    div.registration-page-container div.sub-section-header {
+      font-size: 1.4641em; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    div.registration-page-container div.sub-section-header {
+      font-size: 1.57352em; } }
+  @media (min-width: 1200px) {
+    div.registration-page-container div.sub-section-header {
+      font-size: 1.74901em; } }
+
+div#reg_instr_container {
+  padding: 1em; }
+
+div.required-indicator-legend {
+  padding: 1em; }
 
 /*# sourceMappingURL=style.css.map */
