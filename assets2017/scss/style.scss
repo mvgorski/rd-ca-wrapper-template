@@ -402,6 +402,9 @@ padding: .8rem;
 #mobile-off-canvas-social {
 	margin-left: 0;
 }
+#mobile-off-canvas-social li {
+  display: inline-block;
+}
 #nav-off-canvas #mobile-off-canvas-social a {
 	padding: 20px;
 	color: $aqua;
